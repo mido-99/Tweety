@@ -1,21 +1,19 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
-from main import Ui_MainWindow
+from PyQt5 import uic
 import sys
 
-
-class TweetyScrapy:
+class TweetyScrapy(QMainWindow):
     
     def __init__(self):
-        self.main_win = QMainWindow()
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self.main_win)
+        super(TweetyScrapy, self).__init__()
+        uic.loadUi('main.ui', self)
+        self.pushButton.clicked.connect(self.user_prof_data)
         
-    def show(self):
-        self.main_win.show()
-
+    def user_prof_data(self):
+        self.pushButton_2.setStyleSheet('background-color: red;')
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = TweetyScrapy()
     window.show()
-    sys.exit(app.exec())
+    sys.exit(app.exec_())
