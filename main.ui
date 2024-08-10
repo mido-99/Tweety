@@ -26,9 +26,13 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QLabel {
+   <string notr="true">QLabel[objectName*=&quot;title&quot;]{
     qproperty-alignment: 'AlignCenter';
 	font-size: 30px;
+}
+
+QLabel {
+	font-size: 20px;
 }
 
 QPushButton[objectName*=&quot;back&quot;] {
@@ -51,14 +55,19 @@ QPushButton[objectName*=&quot;back&quot;] {
       <height>100</height>
      </size>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
     <widget class="QWidget" name="home">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="goto_profile">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>60</x>
         <y>150</y>
         <width>200</width>
         <height>180</height>
@@ -80,7 +89,7 @@ QPushButton[objectName*=&quot;back&quot;] {
  Profile Data</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="goto_user_tweets">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -105,7 +114,7 @@ QPushButton[objectName*=&quot;back&quot;] {
  Posts</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="goto_tweet">
       <property name="geometry">
        <rect>
         <x>540</x>
@@ -133,20 +142,17 @@ QPushButton[objectName*=&quot;back&quot;] {
  Tweets</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="title_home">
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>40</y>
+        <y>30</y>
         <width>191</width>
         <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-    qproperty-alignment: 'AlignCenter';
-	font-size: 30px;
-}</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Home Page</string>
@@ -157,16 +163,14 @@ QPushButton[objectName*=&quot;back&quot;] {
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>70</x>
         <y>120</y>
-        <width>161</width>
+        <width>111</width>
         <height>21</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">* {
-font-size: 24px;
-}</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Profile url</string>
@@ -175,18 +179,18 @@ font-size: 24px;
      <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>200</x>
         <y>120</y>
-        <width>461</width>
+        <width>490</width>
         <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="title_profile">
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>40</y>
+        <y>30</y>
         <width>181</width>
         <height>41</height>
        </rect>
@@ -198,8 +202,8 @@ font-size: 24px;
      <widget class="QPushButton" name="backButton">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
+        <x>0</x>
+        <y>0</y>
         <width>51</width>
         <height>51</height>
        </rect>
@@ -222,37 +226,35 @@ font-size: 24px;
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>210</y>
-        <width>55</width>
-        <height>16</height>
+        <x>70</x>
+        <y>120</y>
+        <width>121</width>
+        <height>21</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Profile url</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
-      <property name="geometry">
-       <rect>
-        <x>420</x>
-        <y>210</y>
-        <width>113</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="title_tweets">
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>40</y>
+        <y>30</y>
         <width>171</width>
         <height>51</height>
        </rect>
       </property>
       <property name="text">
-       <string>User Posts</string>
+       <string>User Tweets</string>
       </property>
      </widget>
      <widget class="QPushButton" name="backButton_2">
@@ -277,8 +279,85 @@ font-size: 24px;
        <string/>
       </property>
      </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>120</y>
+        <width>491</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="random_tweets"/>
+    <widget class="QWidget" name="random_tweets">
+     <widget class="QLabel" name="title_tweet">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tweet</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>120</y>
+        <width>491</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>120</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Tweet Link</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
  </widget>

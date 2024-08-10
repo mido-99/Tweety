@@ -13,20 +13,39 @@ class TweetyScrapy(QMainWindow):
         self.setUi()
     
     def setUi(self):
-        back_pix = QIcon('icons/back.jpg')
-        self.backButton.setIcon(back_pix)
-        self.backButton.setIconSize(QSize(40, 40))
+        
+        self.backButtons()
 
+    def backButtons(self):
+        
+        back_pix = QIcon('icons/back.jpg')
+        back_btns = [btn for btn in self.findChildren(QPushButton) if 'backButton' in btn.objectName()]
+
+        for btn in back_btns:
+            # UI
+            btn.setIcon(back_pix)
+            btn.setIconSize(QSize(40, 40))
+            btn.setGeometry(0, 0, 40, 40)
+            # Function
+            btn.clicked.connect(self.go_home)
+    
+    
     def handle_buttons(self):
-        self.pushButton.clicked.connect(self.user_prof_data)
-        self.pushButton_2.clicked.connect(self.all_user_posts)
+        self.goto_profile.clicked.connect(self.user_prof_data)
+        self.goto_user_tweets.clicked.connect(self.all_user_tweets)
+        self.goto_tweet.clicked.connect(self.random_tweet)
 
     def user_prof_data(self):
-        self.pushButton_2.setStyleSheet('background-color: red;')
-    
-    def all_user_posts(self):
         self.stackedWidget.setCurrentIndex(1)
+    
+    def all_user_tweets(self):
+        self.stackedWidget.setCurrentIndex(2)
 
+    def random_tweet(self):
+        self.stackedWidget.setCurrentIndex(3)
+
+    def go_home(self):
+        self.stackedWidget.setCurrentIndex(0)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
