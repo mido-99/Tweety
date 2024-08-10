@@ -25,6 +25,16 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel {
+    qproperty-alignment: 'AlignCenter';
+	font-size: 30px;
+}
+
+QPushButton[objectName*=&quot;back&quot;] {
+    border: none;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
@@ -40,6 +50,9 @@
       <width>120</width>
       <height>100</height>
      </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <widget class="QWidget" name="home">
      <widget class="QPushButton" name="pushButton">
@@ -112,9 +125,31 @@
         <pointsize>22</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="text">
        <string>Random 
  Tweets</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>40</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    qproperty-alignment: 'AlignCenter';
+	font-size: 30px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Home Page</string>
       </property>
      </widget>
     </widget>
@@ -122,11 +157,16 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>240</y>
-        <width>55</width>
-        <height>16</height>
+        <x>50</x>
+        <y>120</y>
+        <width>161</width>
+        <height>21</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">* {
+font-size: 24px;
+}</string>
       </property>
       <property name="text">
        <string>Profile url</string>
@@ -135,9 +175,9 @@
      <widget class="QLineEdit" name="lineEdit">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>240</y>
-        <width>113</width>
+        <x>230</x>
+        <y>120</y>
+        <width>461</width>
         <height>22</height>
        </rect>
       </property>
@@ -145,14 +185,36 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>70</y>
-        <width>55</width>
-        <height>16</height>
+        <x>300</x>
+        <y>40</y>
+        <width>181</width>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
        <string>Profile Data</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
@@ -183,14 +245,36 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>30</y>
-        <width>55</width>
-        <height>16</height>
+        <x>300</x>
+        <y>40</y>
+        <width>171</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="text">
        <string>User Posts</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>50</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
@@ -198,6 +282,8 @@
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="logo.qrc"/>
+ </resources>
  <connections/>
 </ui>
