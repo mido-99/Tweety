@@ -1,10 +1,11 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
 from user_tweets import UserTweets
 import re
+import json
 
 
 class TweetyScrapy(QMainWindow):
@@ -63,11 +64,18 @@ class TweetyScrapy(QMainWindow):
         
         url = self.prof_url_line.text()
         if self.valid_X_user_url(url):
-            # user = UserTweets()
-            print(url)
             self.loading(self.loading_anim)
+            # Profile data parsing
+            user = UserTweets(url)
+            data = user.get_profile_data()
+            if data != '':
+                self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
+                self.loading(self.loading_anim)
+            print(url)
         else:
-            print('No')
+            QMessageBox.warning(self, 'Invalid Input!',
+                "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
+            )
     
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''

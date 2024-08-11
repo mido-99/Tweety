@@ -45,7 +45,8 @@ QPushButton[objectName*=&quot;back&quot;] {
 
 QPlainTextEdit {
 	font-size: 16px;
-}</string>
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
@@ -198,7 +199,7 @@ QPlainTextEdit {
         <x>170</x>
         <y>120</y>
         <width>490</width>
-        <height>22</height>
+        <height>28</height>
        </rect>
       </property>
      </widget>
@@ -245,6 +246,9 @@ QPlainTextEdit {
         <width>741</width>
         <height>331</height>
        </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="prof_url_btn">
@@ -376,6 +380,9 @@ QPlainTextEdit {
         <height>331</height>
        </rect>
       </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="random_tweets">
@@ -479,6 +486,9 @@ QPlainTextEdit {
         <width>741</width>
         <height>331</height>
        </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
