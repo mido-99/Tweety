@@ -3,7 +3,8 @@ from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
-import json
+from user_tweets import UserTweets
+import re
 
 
 class TweetyScrapy(QMainWindow):
@@ -17,10 +18,12 @@ class TweetyScrapy(QMainWindow):
         self.setUi()
     
     def setUi(self):
+        '''Setup UI elements that need to be set from code'''
         
         self.backButtons()
 
     def backButtons(self):
+        """Setup backButtons of pages & set their common functions"""
         
         back_pix = QIcon('icons/back.jpg')
         back_btns = [btn for btn in self.findChildren(QPushButton) if 'backButton' in btn.objectName()]
@@ -57,8 +60,14 @@ class TweetyScrapy(QMainWindow):
     
     def get_profile(self):
         '''Get profile data when "Get" button is clicked'''
-
-        self.loading(self.loading_anim)
+        
+        url = self.prof_url_line.text()
+        if self.valid_X_user_url(url):
+            # user = UserTweets()
+            print(url)
+            self.loading(self.loading_anim)
+        else:
+            print('No')
     
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
@@ -71,7 +80,8 @@ class TweetyScrapy(QMainWindow):
         self.loading(self.loading_anim_3)
     
     def loading(self, label_name):
-        
+        """Show loading gif animation while parsing occurs in background"""
+
         if self.state:
             self.gif_start("icons/loading_white_back.gif", label_name)
         else:
@@ -79,7 +89,7 @@ class TweetyScrapy(QMainWindow):
         self.state = not self.state
 
     def gif_start(self, gif_path, label_name):
-        '''Plays a Loading gif while working in the background'''
+        '''Play a Loading gif animation'''
 
         loading_gif = QMovie(gif_path)
         label_name.setMovie(loading_gif)
@@ -89,11 +99,18 @@ class TweetyScrapy(QMainWindow):
         label_name.loading_gif = loading_gif
 
     def gif_stop(self, label_name):
-        """Stop gif playing in passed Qlabel"""
+        """Stop loading gif animation"""
         
         if hasattr(label_name, 'loading_gif'):
             label_name.loading_gif.stop()
             label_name.setVisible(False)
+    
+    def valid_X_user_url(self, string):
+        '''Validate passed text is a valid x.com url'''
+        
+        if re.match(r'''(https:\/\/(twitter|x).com\/([A-z0-9_]+))$''', string):
+            return True
+        return False
 
 
 if __name__ == '__main__':
