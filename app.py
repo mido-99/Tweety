@@ -1,8 +1,10 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton
 from PyQt5 import uic
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
+import json
+
 
 class TweetyScrapy(QMainWindow):
     
@@ -31,21 +33,40 @@ class TweetyScrapy(QMainWindow):
     
     
     def handle_buttons(self):
-        self.goto_profile.clicked.connect(self.user_prof_data)
-        self.goto_user_tweets.clicked.connect(self.all_user_tweets)
-        self.goto_tweet.clicked.connect(self.random_tweet)
+        self.goto_profile.clicked.connect(self.goto_user_prof_data)
+        self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
+        self.goto_tweet.clicked.connect(self.goto_random_tweet)
+        self.prof_url_btn.clicked.connect(self.get_profile)
+        
 
-    def user_prof_data(self):
+    def goto_user_prof_data(self):
         self.stackedWidget.setCurrentIndex(1)
     
-    def all_user_tweets(self):
+    def goto_all_user_tweets(self):
         self.stackedWidget.setCurrentIndex(2)
 
-    def random_tweet(self):
+    def goto_random_tweet(self):
         self.stackedWidget.setCurrentIndex(3)
 
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
+    
+    def get_profile(self):
+        '''Gets profile data when "Get" button is clicked'''
+
+        profile_data = json.dumps({self.prof_url_edit.text(): 'first', 2: 'second'})
+        self.prof_json_plainEdit.setPlainText(profile_data)
+        self.animate_loading("icons/loading_white_back.gif", self.loading_anim)
+        
+
+    def animate_loading(self, gif_path, label_name):
+        '''Plays a Loading gif while working in the background'''
+
+        loading_gif = QMovie(gif_path)
+        label_name.setMovie(loading_gif)
+        loading_gif.start()
+        label_name.setScaledContents(True)
+        label_name.setVisible(True)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
