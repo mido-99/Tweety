@@ -72,7 +72,7 @@ QPlainTextEdit {
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="home">
      <property name="styleSheet">
@@ -192,7 +192,7 @@ QPlainTextEdit {
        <string>Profile url</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="prof_url_edit">
+     <widget class="QLineEdit" name="prof_url_line">
       <property name="geometry">
        <rect>
         <x>170</x>
@@ -331,13 +331,49 @@ QPlainTextEdit {
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="user_twts_line">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>170</x>
         <y>120</y>
         <width>491</width>
         <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="loading_anim_2">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>60</y>
+        <width>80</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="user_twts_btn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>120</y>
+        <width>93</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="tweets_json_plainEdit">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>741</width>
+        <height>331</height>
        </rect>
       </property>
      </widget>
@@ -378,10 +414,10 @@ QPlainTextEdit {
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="tweet_line">
       <property name="geometry">
        <rect>
-        <x>200</x>
+        <x>160</x>
         <y>120</y>
         <width>491</width>
         <height>22</height>
@@ -391,7 +427,7 @@ QPlainTextEdit {
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>50</x>
         <y>120</y>
         <width>111</width>
         <height>21</height>
@@ -407,6 +443,42 @@ QPlainTextEdit {
       </property>
       <property name="text">
        <string>Tweet Link</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tweet_btn">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>120</y>
+        <width>93</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Get</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="loading_anim_3">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>60</y>
+        <width>80</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="tweets_json_plainEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>741</width>
+        <height>331</height>
+       </rect>
       </property>
      </widget>
     </widget>

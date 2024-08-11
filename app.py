@@ -8,6 +8,8 @@ import json
 
 class TweetyScrapy(QMainWindow):
     
+    state = True
+    
     def __init__(self):
         super(TweetyScrapy, self).__init__()
         uic.loadUi('main.ui', self)
@@ -37,6 +39,8 @@ class TweetyScrapy(QMainWindow):
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
         self.goto_tweet.clicked.connect(self.goto_random_tweet)
         self.prof_url_btn.clicked.connect(self.get_profile)
+        self.user_twts_btn.clicked.connect(self.get_user_tweets)
+        self.tweet_btn.clicked.connect(self.get_tweet)
         
 
     def goto_user_prof_data(self):
@@ -52,14 +56,29 @@ class TweetyScrapy(QMainWindow):
         self.stackedWidget.setCurrentIndex(0)
     
     def get_profile(self):
-        '''Gets profile data when "Get" button is clicked'''
+        '''Get profile data when "Get" button is clicked'''
 
-        profile_data = json.dumps({self.prof_url_edit.text(): 'first', 2: 'second'})
-        self.prof_json_plainEdit.setPlainText(profile_data)
-        self.animate_loading("icons/loading_white_back.gif", self.loading_anim)
+        self.loading(self.loading_anim)
+    
+    def get_user_tweets(self):
+        '''Get User Tweets when "Get" button is clicked'''
+
+        self.loading(self.loading_anim_2)
+    
+    def get_tweet(self):
+        '''Get User Tweets when "Get" button is clicked'''
+
+        self.loading(self.loading_anim_3)
+    
+    def loading(self, label_name):
         
+        if self.state:
+            self.gif_start("icons/loading_white_back.gif", label_name)
+        else:
+            self.gif_stop(label_name)
+        self.state = not self.state
 
-    def animate_loading(self, gif_path, label_name):
+    def gif_start(self, gif_path, label_name):
         '''Plays a Loading gif while working in the background'''
 
         loading_gif = QMovie(gif_path)
@@ -67,6 +86,15 @@ class TweetyScrapy(QMainWindow):
         loading_gif.start()
         label_name.setScaledContents(True)
         label_name.setVisible(True)
+        label_name.loading_gif = loading_gif
+
+    def gif_stop(self, label_name):
+        """Stop gif playing in passed Qlabel"""
+        
+        if hasattr(label_name, 'loading_gif'):
+            label_name.loading_gif.stop()
+            label_name.setVisible(False)
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
