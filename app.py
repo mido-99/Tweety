@@ -3,14 +3,12 @@ from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
-from user_tweets import UserTweets
 import re
 import json
+from worker import ProfileThread
 
 
 class TweetyScrapy(QMainWindow):
-    
-    state = True
     
     def __init__(self):
         super(TweetyScrapy, self).__init__()
@@ -64,19 +62,33 @@ class TweetyScrapy(QMainWindow):
         
         url = self.prof_url_line.text()
         if self.valid_X_user_url(url):
-            self.loading(self.loading_anim)
+            self.loading(self.loading_anim, start=True)
+
             # Profile data parsing
-            user = UserTweets(url)
-            data = user.get_profile_data()
-            if data != '':
-                self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
-                self.loading(self.loading_anim)
-            print(url)
+            self.prof_worker = ProfileThread(url)
+            self.prof_worker.profile_data_ready.connect(self.on_profile_data_ready)
+            self.prof_worker.start()
+            # print(url)
+
         else:
             QMessageBox.warning(self, 'Invalid Input!',
                 "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
             )
     
+    def valid_X_user_url(self, string):
+        '''Validate passed text is a valid x.com url'''
+
+        return bool(
+            re.match(r'''(https:\/\/(twitter|x).com\/([A-z0-9_]+))$''', string)
+        )
+    
+    def on_profile_data_ready(self, data):
+        
+        if data != '':
+            self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
+        self.loading(self.loading_anim, start=False)
+
+
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
 
@@ -87,14 +99,13 @@ class TweetyScrapy(QMainWindow):
 
         self.loading(self.loading_anim_3)
     
-    def loading(self, label_name):
+    def loading(self, label_name, start=True):
         """Show loading gif animation while parsing occurs in background"""
 
-        if self.state:
+        if start:
             self.gif_start("icons/loading_white_back.gif", label_name)
         else:
             self.gif_stop(label_name)
-        self.state = not self.state
 
     def gif_start(self, gif_path, label_name):
         '''Play a Loading gif animation'''
@@ -112,13 +123,7 @@ class TweetyScrapy(QMainWindow):
         if hasattr(label_name, 'loading_gif'):
             label_name.loading_gif.stop()
             label_name.setVisible(False)
-    
-    def valid_X_user_url(self, string):
-        '''Validate passed text is a valid x.com url'''
-        
-        if re.match(r'''(https:\/\/(twitter|x).com\/([A-z0-9_]+))$''', string):
-            return True
-        return False
+            del label_name.loading_gif
 
 
 if __name__ == '__main__':
