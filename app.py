@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox, QFileDialog
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
@@ -37,13 +37,15 @@ class TweetyScrapy(QMainWindow):
     
     
     def handle_buttons(self):
+        self.pushButton.clicked.connect(self.test)
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
         self.goto_tweet.clicked.connect(self.goto_random_tweet)
         self.prof_url_btn.clicked.connect(self.get_profile)
         self.user_twts_btn.clicked.connect(self.get_user_tweets)
         self.tweet_btn.clicked.connect(self.get_tweet)
-        
+        self.export_prof_btn.clicked.connect(self.export_prof_data)
+        self.prof_dir_btn.clicked.connect(self.select_prof_dir)
 
     def goto_user_prof_data(self):
         self.stackedWidget.setCurrentIndex(1)
@@ -57,6 +59,7 @@ class TweetyScrapy(QMainWindow):
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
     
+    #########   Profile Data Page    #########
     def get_profile(self):
         '''Get profile data when "Get" button is clicked'''
         
@@ -85,10 +88,48 @@ class TweetyScrapy(QMainWindow):
     def on_profile_data_ready(self, data):
         
         if data != '':
+            self.data = data
             self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
         self.loading(self.loading_anim, start=False)
 
+    def export_prof_data(self):
+        '''Export profile data into selected json file'''
 
+        filename = self.export_prof_data_edit.text()
+
+        # if user clicked export with no data
+        if self.prof_json_plainEdit.toPlainText() == '':
+            QMessageBox.critical(self, 'Error', 'No Data!\n'
+                'Please search for a username first to get its data')
+            return None
+        
+        # if user clicked export  with invalid file path
+        if filename != '':          # re.match(r'''[^<>:;,?"*|/^]+$''', filename) json validation for future
+            if not filename.endswith('.json'):
+                filename += '.json'
+            try:
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write(self.prof_json_plainEdit.toPlainText())
+                QMessageBox.information(self, 'Success!', f'Data Exported to {filename}')
+            except:
+                QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
+                return None
+        else:
+            QMessageBox.critical(self, 'Error', 'Export failed!\n'
+                'Please check file name, extension, or existing file with the same name')
+
+    def test(self):
+        pass
+
+    def select_prof_dir(self):
+        '''Select filename to save profile data to'''
+
+        username = self.data.get('username', '') if hasattr(self, 'data') else ''
+        filename = QFileDialog.getSaveFileName(self, 'Save as', username, "JSON files (*.json)")[0]
+        self.export_prof_data_edit.setText(filename)
+        
+    
+    #########   User Tweets Page    #########
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
 
