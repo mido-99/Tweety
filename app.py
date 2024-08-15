@@ -16,9 +16,9 @@ class TweetyScrapy(QMainWindow):
     def __init__(self):
         super(TweetyScrapy, self).__init__()
         uic.loadUi('main.ui', self)
+        self.setUi()
         self.handle_buttons()
         self.handle_comboboxes()
-        self.setUi()
     
     def setUi(self):
         '''Setup UI elements that need to be set from code'''
@@ -34,30 +34,35 @@ class TweetyScrapy(QMainWindow):
         for btn in back_btns:
             # UI
             btn.setIcon(back_pix)
-            btn.setIconSize(QSize(40, 40))
-            btn.setGeometry(0, 0, 40, 40)
+            btn.setIconSize(QSize(30, 30))
+            btn.setGeometry(0, 0, 30, 30)
             # Function
-            btn.clicked.connect(self.go_home)
-    
+            btn.clicked.connect(self.go_home)    
     
     def handle_buttons(self):
+        
         self.pushButton.clicked.connect(self.test)
+        # Home page
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
         self.goto_tweet.clicked.connect(self.goto_random_tweet)
+        # Profile page
         self.prof_url_btn.clicked.connect(self.get_profile)
-        self.user_twts_btn.clicked.connect(self.get_user_tweets)
-        self.tweet_btn.clicked.connect(self.get_tweet)
         self.export_prof_btn.clicked.connect(partial(self.export_json_data, 
             self.export_prof_data_line, self.prof_json_plainEdit))
         self.prof_dir_btn.clicked.connect(self.select_prof_dir)
+        # User tweets page
+        self.user_twts_btn.clicked.connect(self.get_user_tweets)
         self.export_tweets_btn.clicked.connect(partial(self.export_json_data, 
-            self.export_tweets_edit, self.tweets_json_plainEdit))
+            self.export_tweets_line, self.tweets_json_plainEdit))
         self.tweets_dir_btn.clicked.connect(self.select_tweets_dir)
+        # Random tweet page
+        self.tweet_btn.clicked.connect(self.get_tweet)
 
 
     def handle_comboboxes(self):
         self.tweets_num_combo.activated.connect(self.handle_custom_number)
+
     def goto_user_prof_data(self):
         self.stackedWidget.setCurrentIndex(1)
     
@@ -171,6 +176,7 @@ class TweetyScrapy(QMainWindow):
 
     def get_tweet(self):
         '''Get User Tweets when "Get" button is clicked'''
+        #TODO To be added after we add parse_tweet in UserTweets class
 
         self.loading(self.loading_anim_3)
     
