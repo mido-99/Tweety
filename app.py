@@ -1,11 +1,12 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QMessageBox, QFileDialog
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox, QFileDialog,
+    QInputDialog)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
 import re
 import json
-from worker import ProfileThread
+from worker import ProfileThread, TweetsThread
 
 
 class TweetyScrapy(QMainWindow):
@@ -14,6 +15,7 @@ class TweetyScrapy(QMainWindow):
         super(TweetyScrapy, self).__init__()
         uic.loadUi('main.ui', self)
         self.handle_buttons()
+        self.handle_comboboxes()
         self.setUi()
     
     def setUi(self):
@@ -47,6 +49,8 @@ class TweetyScrapy(QMainWindow):
         self.export_prof_btn.clicked.connect(self.export_prof_data)
         self.prof_dir_btn.clicked.connect(self.select_prof_dir)
 
+    def handle_comboboxes(self):
+        self.tweets_num_combo.activated.connect(self.handle_custom_number)
     def goto_user_prof_data(self):
         self.stackedWidget.setCurrentIndex(1)
     
@@ -60,15 +64,17 @@ class TweetyScrapy(QMainWindow):
         self.stackedWidget.setCurrentIndex(0)
     
     #########   Profile Data Page    #########
+    
+
     def get_profile(self):
         '''Get profile data when "Get" button is clicked'''
         
         url = self.prof_url_line.text()
-        if self.valid_X_user_url(url):
+        if self.is_valid_X_user_url(url) and self.tweets_num_spin:
             self.loading(self.loading_anim, start=True)
 
             # Profile data parsing
-            self.prof_worker = ProfileThread(url)
+            self.prof_worker = TweetsThread(url, )
             self.prof_worker.profile_data_ready.connect(self.on_profile_data_ready)
             self.prof_worker.start()
             # print(url)
@@ -78,7 +84,7 @@ class TweetyScrapy(QMainWindow):
                 "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
             )
     
-    def valid_X_user_url(self, string):
+    def is_valid_X_user_url(self, string):
         '''Validate passed text is a valid x.com url'''
 
         return bool(
@@ -99,7 +105,7 @@ class TweetyScrapy(QMainWindow):
 
         # if user clicked export with no data
         if self.prof_json_plainEdit.toPlainText() == '':
-            QMessageBox.critical(self, 'Error', 'No Data!\n'
+            QMessageBox.warning(self, 'Error', 'No Data!\n'
                 'Please search for a username first to get its data')
             return None
         
@@ -118,9 +124,6 @@ class TweetyScrapy(QMainWindow):
             QMessageBox.critical(self, 'Error', 'Export failed!\n'
                 'Please check file name, extension, or existing file with the same name')
 
-    def test(self):
-        pass
-
     def select_prof_dir(self):
         '''Select filename to save profile data to'''
 
@@ -130,11 +133,25 @@ class TweetyScrapy(QMainWindow):
         
     
     #########   User Tweets Page    #########
+    
+    def test(self):
+        
+        print(self.valid_tweets_input())
+        
+    def handle_custom_number(self, index):
+        
+        numbers_list = [self.tweets_num_combo.itemText(i) for i in range(self.tweets_num_combo.count())]
+
+        if self.tweets_num_combo.itemText(index) == "Custom":
+            number, ok = QInputDialog.getInt(self, 'User Tweets', 'Select tweets number to get', 1, 1, 10000)
+            if ok:
+                if str(number) not in numbers_list:     # If input doesn't exist
+                    self.tweets_num_combo.insertItem(self.tweets_num_combo.count() -1, str(number))
+                self.tweets_num_combo.setCurrentText(str(number))
+        
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
 
-        self.loading(self.loading_anim_2)
-    
     def get_tweet(self):
         '''Get User Tweets when "Get" button is clicked'''
 

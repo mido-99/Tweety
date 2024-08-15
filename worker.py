@@ -15,3 +15,18 @@ class ProfileThread(QThread):
         data = user.get_profile_data()
         self.profile_data_ready.emit(data)
 
+
+class TweetsThread(QThread):
+    
+    tweets_ready = pyqtSignal(dict)
+
+    def __init__(self, url, number):
+        super().__init__()
+        self.url = url
+        self.number = number
+    
+    def run(self):
+        user = UserTweets(self.url)
+        data = user.get_tweets(self.number)
+        self.tweets_ready.emit(data)
+    
