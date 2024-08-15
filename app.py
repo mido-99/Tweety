@@ -4,8 +4,10 @@ from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 import sys
+import os
 import re
 import json
+from functools import partial
 from worker import ProfileThread, TweetsThread
 
 
@@ -46,7 +48,9 @@ class TweetyScrapy(QMainWindow):
         self.prof_url_btn.clicked.connect(self.get_profile)
         self.user_twts_btn.clicked.connect(self.get_user_tweets)
         self.tweet_btn.clicked.connect(self.get_tweet)
-        self.export_prof_btn.clicked.connect(self.export_prof_data)
+        # self.export_prof_btn.clicked.connect(self.export_prof_data)
+        self.export_prof_btn.clicked.connect(partial(self.export_json_data, 
+            self.export_prof_data_edit, self.prof_json_plainEdit))
         self.prof_dir_btn.clicked.connect(self.select_prof_dir)
 
     def handle_comboboxes(self):
@@ -70,11 +74,11 @@ class TweetyScrapy(QMainWindow):
         '''Get profile data when "Get" button is clicked'''
         
         url = self.prof_url_line.text()
-        if self.is_valid_X_user_url(url) and self.tweets_num_spin:
+        if self.is_valid_X_user_url(url):
             self.loading(self.loading_anim, start=True)
 
             # Profile data parsing
-            self.prof_worker = TweetsThread(url, )
+            self.prof_worker = ProfileThread(url)
             self.prof_worker.profile_data_ready.connect(self.on_profile_data_ready)
             self.prof_worker.start()
             # print(url)
@@ -98,13 +102,40 @@ class TweetyScrapy(QMainWindow):
             self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
         self.loading(self.loading_anim, start=False)
 
-    def export_prof_data(self):
+    # def export_prof_data(self):
+    #     '''Export profile data into selected json file'''
+
+    #     filename = self.export_prof_data_edit.text()
+
+    #     # if user clicked export with no data
+    #     if self.prof_json_plainEdit.toPlainText() == '':
+    #         QMessageBox.warning(self, 'Error', 'No Data!\n'
+    #             'Please search for a username first to get its data')
+    #         return None
+        
+    #     # if user clicked export  with invalid file path
+    #     if filename != '':          # re.match(r'''[^<>:;,?"*|/^]+$''', filename) json validation for future
+    #         if not filename.endswith('.json'):
+    #             filename += '.json'
+    #         try:
+    #             with open(filename, 'w', encoding='utf-8') as f:
+    #                 f.write(self.prof_json_plainEdit.toPlainText())
+    #             QMessageBox.information(self, 'Success!', f'Data Exported to {filename}')
+    #         except:
+    #             QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
+    #             return None
+    #     else:
+    #         QMessageBox.critical(self, 'Error', 'Export failed!\n'
+    #             'Please check file name, extension, or existing file with the same name')
+        
+
+    def export_json_data(self, export_filepath_lineEdit, json_data_plainTextEdit):
         '''Export profile data into selected json file'''
 
-        filename = self.export_prof_data_edit.text()
+        filename = export_filepath_lineEdit.text()
 
         # if user clicked export with no data
-        if self.prof_json_plainEdit.toPlainText() == '':
+        if json_data_plainTextEdit.toPlainText() == '':
             QMessageBox.warning(self, 'Error', 'No Data!\n'
                 'Please search for a username first to get its data')
             return None
@@ -115,8 +146,8 @@ class TweetyScrapy(QMainWindow):
                 filename += '.json'
             try:
                 with open(filename, 'w', encoding='utf-8') as f:
-                    f.write(self.prof_json_plainEdit.toPlainText())
-                QMessageBox.information(self, 'Success!', f'Data Exported to {filename}')
+                    f.write(json_data_plainTextEdit.toPlainText())
+                QMessageBox.information(self, 'Success!', f'Data Exported to\n {os.path.basename(filename)}')
             except:
                 QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
                 return None
