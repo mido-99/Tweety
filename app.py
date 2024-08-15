@@ -62,10 +62,10 @@ class TweetyScrapy(QMainWindow):
 
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
-    
-    #########   Profile Data Page    #########
-    
 
+
+    #*###########   Profile Data Page    #############
+    
     def get_profile(self):
         '''Get profile data when "Get" button is clicked'''
         
@@ -130,9 +130,9 @@ class TweetyScrapy(QMainWindow):
         username = self.data.get('username', '') if hasattr(self, 'data') else ''
         filename = QFileDialog.getSaveFileName(self, 'Save as', username, "JSON files (*.json)")[0]
         self.export_prof_data_edit.setText(filename)
-        
-    
-    #########   User Tweets Page    #########
+
+
+    #*#########   User Tweets Page    ###########
     
     def test(self):
         
@@ -151,6 +151,33 @@ class TweetyScrapy(QMainWindow):
         
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
+
+        url = self.user_twts_edit.text()
+        number = self.tweets_num_combo.itemText(self.tweets_num_combo.currentIndex())
+
+        if self.is_valid_X_user_url(url):
+            self.loading(self.loading_anim_2, start=True)
+
+            # Tweets data parsing
+            self.tweets_worker = TweetsThread(url, int(number))
+            self.tweets_worker.tweets_ready.connect(self.on_tweets_ready)
+            self.tweets_worker.start()
+            # print(url)
+
+        else:
+            QMessageBox.warning(self, 'Invalid Input!',
+                "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
+            )
+    
+    def on_tweets_ready(self, data):
+        
+        if data != '':
+            self.data = data
+            self.tweets_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
+        self.loading(self.loading_anim_2, start=False)
+    
+    
+    #*##############    Random Tweet Page   ##############
 
     def get_tweet(self):
         '''Get User Tweets when "Get" button is clicked'''

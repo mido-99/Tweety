@@ -18,7 +18,7 @@ class ProfileThread(QThread):
 
 class TweetsThread(QThread):
     
-    tweets_ready = pyqtSignal(dict)
+    tweets_ready = pyqtSignal(list)
 
     def __init__(self, url, number):
         super().__init__()
