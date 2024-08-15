@@ -45,7 +45,6 @@ class TweetyScrapy(QMainWindow):
         # Home page
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
-        self.goto_tweet.clicked.connect(self.goto_random_tweet)
         # Profile page
         self.prof_url_btn.clicked.connect(self.get_profile)
         self.export_prof_btn.clicked.connect(partial(self.export_json_data, 
@@ -56,8 +55,6 @@ class TweetyScrapy(QMainWindow):
         self.export_tweets_btn.clicked.connect(partial(self.export_json_data, 
             self.export_tweets_line, self.tweets_json_plainEdit))
         self.tweets_dir_btn.clicked.connect(self.select_tweets_dir)
-        # Random tweet page
-        self.tweet_btn.clicked.connect(self.get_tweet)
 
 
     def handle_comboboxes(self):
@@ -68,9 +65,6 @@ class TweetyScrapy(QMainWindow):
     
     def goto_all_user_tweets(self):
         self.stackedWidget.setCurrentIndex(2)
-
-    def goto_random_tweet(self):
-        self.stackedWidget.setCurrentIndex(3)
 
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
@@ -123,8 +117,8 @@ class TweetyScrapy(QMainWindow):
     
     def test(self):
         
-        print(self.valid_tweets_input())
-        
+        pass
+    
     def handle_custom_number(self, index):
         
         numbers_list = [self.tweets_num_combo.itemText(i) for i in range(self.tweets_num_combo.count())]
@@ -161,7 +155,7 @@ class TweetyScrapy(QMainWindow):
         '''Select filename to save profile data to'''
 
         username = self.tweets_user if hasattr(self, 'tweets_user') else ''
-        filename = 'tweets_' + QFileDialog.getSaveFileName(self, 'Save as', username, "JSON files (*.json)")[0]
+        filename = QFileDialog.getSaveFileName(self, 'Save as', f"{username}_tweets", "JSON files (*.json)")[0]
         self.export_tweets_line.setText(filename)
     
     def on_tweets_ready(self, data):
@@ -170,17 +164,8 @@ class TweetyScrapy(QMainWindow):
             self.data = data
             self.tweets_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
         self.loading(self.loading_anim_2, start=False)
-    
-    
-    #*##############    Random Tweet Page   ##############
 
-    def get_tweet(self):
-        '''Get User Tweets when "Get" button is clicked'''
-        #TODO To be added after we add parse_tweet in UserTweets class
 
-        self.loading(self.loading_anim_3)
-    
-    
     #*#############     General methods     ##############
     
     def loading(self, label_name, start=True):
@@ -234,7 +219,6 @@ class TweetyScrapy(QMainWindow):
         else:
             QMessageBox.critical(self, 'Error', 'Export failed!\n'
                 'Please check file name, extension, or existing file with the same name')
-
 
 
 if __name__ == '__main__':
