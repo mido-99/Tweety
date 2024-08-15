@@ -185,7 +185,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>122</y>
+        <y>120</y>
         <width>111</width>
         <height>21</height>
        </rect>
@@ -203,7 +203,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>170</x>
         <y>120</y>
         <width>490</width>
-        <height>28</height>
+        <height>24</height>
        </rect>
       </property>
      </widget>
@@ -284,33 +284,33 @@ QLineEdit[objectName*=&quot;export&quot;] {
      <widget class="QPushButton" name="export_prof_btn">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>610</x>
         <y>550</y>
         <width>101</width>
-        <height>31</height>
+        <height>30</height>
        </rect>
       </property>
       <property name="text">
        <string>Export</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="export_prof_data_edit">
+     <widget class="QLineEdit" name="export_prof_data_line">
       <property name="geometry">
        <rect>
-        <x>120</x>
+        <x>110</x>
         <y>550</y>
         <width>490</width>
-        <height>28</height>
+        <height>30</height>
        </rect>
       </property>
      </widget>
      <widget class="QToolButton" name="prof_dir_btn">
       <property name="geometry">
        <rect>
-        <x>581</x>
+        <x>571</x>
         <y>551</y>
         <width>31</width>
-        <height>26</height>
+        <height>30</height>
        </rect>
       </property>
       <property name="text">
@@ -322,7 +322,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>80</x>
         <y>120</y>
         <width>121</width>
         <height>21</height>
@@ -381,7 +381,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>170</x>
         <y>120</y>
         <width>491</width>
-        <height>22</height>
+        <height>24</height>
        </rect>
       </property>
      </widget>
@@ -501,6 +501,42 @@ QLineEdit[objectName*=&quot;export&quot;] {
       </property>
       <property name="text">
        <string>Tweets Number</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="export_tweets_line">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>550</y>
+        <width>490</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QToolButton" name="tweets_dir_btn">
+      <property name="geometry">
+       <rect>
+        <x>571</x>
+        <y>551</y>
+        <width>31</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="export_tweets_btn">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>550</y>
+        <width>101</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Export</string>
       </property>
      </widget>
     </widget>

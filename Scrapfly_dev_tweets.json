@@ -1,0 +1,440 @@
+[
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1821457700992991567",
+    "created": "Thu Aug 08 08:05:31 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1821457700992991567",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "Python",
+      "screenshots",
+      "Selenium",
+      "Playwright"
+    ],
+    "tagged_users": [],
+    "text": "🤖Learn how to take #Python #screenshots through #Selenium and #Playwright, including common browser tips and tricks for customizing web page captures. 👇\n\nhttps://t.co/QBfZwr4X2U",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "31"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1820374972973408521",
+    "created": "Mon Aug 05 08:23:09 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1820374972973408521",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "screenshotAPI"
+    ],
+    "tagged_users": [],
+    "text": "🤖Learn everything about the best #screenshotAPI, from the features to consider to a list of the best services available and how to benchmark them. 👇\nhttps://t.co/6mFtGUiD9R",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "51"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1816390770561077499",
+    "created": "Thu Jul 25 08:31:21 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1816390770561077499",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webscraping",
+      "Go",
+      "Colly"
+    ],
+    "tagged_users": [],
+    "text": "🤖Learn #webscraping with #Go through native HTTP requests, HTML parsing to a step-by-step guide to using #Colly👇\nhttps://t.co/w1u22r0ewM",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "95"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1801028043693019440",
+    "created": "Wed Jun 12 23:05:21 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1801028043693019440",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "LLM",
+      "webscraping",
+      "RAG",
+      "LlamaIndex",
+      "LangChain"
+    ],
+    "tagged_users": [],
+    "text": "🤖 Here's how to use #LLM and #webscraping for #RAG applications using  #LlamaIndex and #LangChain 👇\nhttps://t.co/XxzhwALlCh",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "211"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1792408667058495651",
+    "created": "Mon May 20 04:15:02 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1792408667058495651",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webscraping"
+    ],
+    "tagged_users": [],
+    "text": "🤖 Introduction to cloud browsers in #webscraping and their benefits, as well as a step-by-step setup with self-hosted Selenium-grid cloud browsers 👇\nhttps://t.co/dA7g4laX7c",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "256"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1788949979429490958",
+    "created": "Fri May 10 15:11:26 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1788949979429490958",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "scrape"
+    ],
+    "tagged_users": [],
+    "text": "🤖 Learn how to #scrape forms through a step-by-step guide using HTTP clients and headless browsers. 👇\n\nhttps://t.co/P4ZGv40sWN",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "197"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1787674119737168225",
+    "created": "Tue May 07 02:41:38 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1787674119737168225",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webscraping"
+    ],
+    "tagged_users": [],
+    "text": "🔍Here's how to create a minimum advertised price (MAP) monitoring tool using #webscraping 👇\nhttps://t.co/Oa1Ct6Y9n7",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "112"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1756939351110599161",
+    "created": "Mon Feb 12 07:12:38 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1756939351110599161",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webScraping"
+    ],
+    "tagged_users": [],
+    "text": "🍯Here's how honeypot traps are used to lure and blacklist web scrapers. Be cautious when #webScraping 👇\nhttps://t.co/UfZsUVGXeb",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "273"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1,
+    "conversation_id": "1730075764106956956",
+    "created": "Thu Nov 30 04:06:20 +0000 2023",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1730075764106956956",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "python"
+    ],
+    "tagged_users": [],
+    "text": "🤖 Here's how to scrape https://t.co/XpjedjMUA9 - the biggest real estate platform in Germany - with  #python 🐍\nhttps://t.co/0bu2FBePrM",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "363"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1729039540063764753",
+    "created": "Mon Nov 27 07:28:45 +0000 2023",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1729039540063764753",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "🤖 Here's how to scrape the biggest real estate website in Switzerland - https://t.co/iTEZXAGhvg 👇\n\nhttps://t.co/ErxuFeLoq8",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "264"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1724299685031014447",
+    "created": "Tue Nov 14 05:34:15 +0000 2023",
+    "favorite_count": 1,
+    "has_translate": false,
+    "id": "1724299685031014447",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webScraping"
+    ],
+    "tagged_users": [],
+    "text": "🍪here's a quick intro on how to use cookies in #webScraping 👇\nhttps://t.co/2KyU7tu891",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "271"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/F-up3ABWcAA7eLy.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1723658307531931834",
+    "created": "Sun Nov 12 11:05:39 +0000 2023",
+    "favorite_count": 2,
+    "has_translate": false,
+    "id": "1723658307531931834",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "qme",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "😅🕷️ https://t.co/PdR6IE45a6",
+    "url": [
+      "https://twitter.com/Scrapfly_dev/status/1723658307531931834/photo/1"
+    ],
+    "user_id": "1310623081300402178",
+    "views": "243"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1723304616396505275",
+    "created": "Sat Nov 11 11:40:12 +0000 2023",
+    "favorite_count": 1,
+    "has_translate": false,
+    "id": "1723304616396505275",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webScraping"
+    ],
+    "tagged_users": [],
+    "text": "New blog tutorial on #webScraping Seloger 👇 \nhttps://t.co/L0AKIsOytK",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "178"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1719259455915970760",
+    "created": "Tue Oct 31 07:46:11 +0000 2023",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1719259455915970760",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webScraping"
+    ],
+    "tagged_users": [],
+    "text": "🪙 Leboncoin is the biggest online marketplace in France. The best part about it?\nAll of that public market data can be pulled for free with a bit of #webScraping 🤖 See our blog intro 👇\nhttps://t.co/dScHAVmCRS",
+    "url": null,
+    "user_id": "1310623081300402178",
+    "views": "188"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/F9gkBxNbEAA_6mB.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1718162930632659167",
+    "created": "Sat Oct 28 07:08:59 +0000 2023",
+    "favorite_count": 1,
+    "has_translate": false,
+    "id": "1718162930632659167",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "Selenium",
+      "webScraping",
+      "seleniumGrid"
+    ],
+    "tagged_users": [],
+    "text": "🤖Selenium Grid is a free server for your #Selenium #webScraping. It manages multiple headless browsers for fast, scalable web automation and it's pretty awesome. Check out our intro 👇\n\nhttps://t.co/6VV9DCIxTr #seleniumGrid https://t.co/W7in9mZh59",
+    "url": [
+      "https://twitter.com/Scrapfly_dev/status/1718162930632659167/photo/1"
+    ],
+    "user_id": "1310623081300402178",
+    "views": "185"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/F9b5Ep1WsAABt16.png"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1717834976962453701",
+    "created": "Fri Oct 27 09:25:48 +0000 2023",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1717834976962453701",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "🤫Here's a secret - the web is full of hidden, secret APIs you can call from your scripts 🤖 \nIt's just the matter of figuring out how to find and access them - here's our quick intro:\n\nhttps://t.co/8qZNhhiOz6 https://t.co/5xMvEi182L",
+    "url": [
+      "https://twitter.com/Scrapfly_dev/status/1717834976962453701/photo/1"
+    ],
+    "user_id": "1310623081300402178",
+    "views": "135"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/F8oYrd9bYAA-KQR.png"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1714209891135668315",
+    "created": "Tue Oct 17 09:21:01 +0000 2023",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1714209891135668315",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 0,
+    "tagged_hashtags": [
+      "webScraping",
+      "python"
+    ],
+    "tagged_users": [],
+    "text": "🤖🪄Tutorial on #webScraping emails using #python \nIt's pretty ez ngl 👇\nhttps://t.co/AcmxMHNIQY https://t.co/wGUyPfBRfe",
+    "url": [
+      "https://twitter.com/Scrapfly_dev/status/1714209891135668315/photo/1"
+    ],
+    "user_id": "1310623081300402178",
+    "views": "207"
+  }
+]

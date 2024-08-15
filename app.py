@@ -48,10 +48,13 @@ class TweetyScrapy(QMainWindow):
         self.prof_url_btn.clicked.connect(self.get_profile)
         self.user_twts_btn.clicked.connect(self.get_user_tweets)
         self.tweet_btn.clicked.connect(self.get_tweet)
-        # self.export_prof_btn.clicked.connect(self.export_prof_data)
         self.export_prof_btn.clicked.connect(partial(self.export_json_data, 
-            self.export_prof_data_edit, self.prof_json_plainEdit))
+            self.export_prof_data_line, self.prof_json_plainEdit))
         self.prof_dir_btn.clicked.connect(self.select_prof_dir)
+        self.export_tweets_btn.clicked.connect(partial(self.export_json_data, 
+            self.export_tweets_edit, self.tweets_json_plainEdit))
+        self.tweets_dir_btn.clicked.connect(self.select_tweets_dir)
+
 
     def handle_comboboxes(self):
         self.tweets_num_combo.activated.connect(self.handle_custom_number)
@@ -76,6 +79,7 @@ class TweetyScrapy(QMainWindow):
         url = self.prof_url_line.text()
         if self.is_valid_X_user_url(url):
             self.loading(self.loading_anim, start=True)
+            self.prof_user = url.split('/')[-1]
 
             # Profile data parsing
             self.prof_worker = ProfileThread(url)
@@ -101,66 +105,13 @@ class TweetyScrapy(QMainWindow):
             self.data = data
             self.prof_json_plainEdit.setPlainText(json.dumps(data, indent=2, ensure_ascii=False))
         self.loading(self.loading_anim, start=False)
-
-    # def export_prof_data(self):
-    #     '''Export profile data into selected json file'''
-
-    #     filename = self.export_prof_data_edit.text()
-
-    #     # if user clicked export with no data
-    #     if self.prof_json_plainEdit.toPlainText() == '':
-    #         QMessageBox.warning(self, 'Error', 'No Data!\n'
-    #             'Please search for a username first to get its data')
-    #         return None
         
-    #     # if user clicked export  with invalid file path
-    #     if filename != '':          # re.match(r'''[^<>:;,?"*|/^]+$''', filename) json validation for future
-    #         if not filename.endswith('.json'):
-    #             filename += '.json'
-    #         try:
-    #             with open(filename, 'w', encoding='utf-8') as f:
-    #                 f.write(self.prof_json_plainEdit.toPlainText())
-    #             QMessageBox.information(self, 'Success!', f'Data Exported to {filename}')
-    #         except:
-    #             QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
-    #             return None
-    #     else:
-    #         QMessageBox.critical(self, 'Error', 'Export failed!\n'
-    #             'Please check file name, extension, or existing file with the same name')
-        
-
-    def export_json_data(self, export_filepath_lineEdit, json_data_plainTextEdit):
-        '''Export profile data into selected json file'''
-
-        filename = export_filepath_lineEdit.text()
-
-        # if user clicked export with no data
-        if json_data_plainTextEdit.toPlainText() == '':
-            QMessageBox.warning(self, 'Error', 'No Data!\n'
-                'Please search for a username first to get its data')
-            return None
-        
-        # if user clicked export  with invalid file path
-        if filename != '':          # re.match(r'''[^<>:;,?"*|/^]+$''', filename) json validation for future
-            if not filename.endswith('.json'):
-                filename += '.json'
-            try:
-                with open(filename, 'w', encoding='utf-8') as f:
-                    f.write(json_data_plainTextEdit.toPlainText())
-                QMessageBox.information(self, 'Success!', f'Data Exported to\n {os.path.basename(filename)}')
-            except:
-                QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
-                return None
-        else:
-            QMessageBox.critical(self, 'Error', 'Export failed!\n'
-                'Please check file name, extension, or existing file with the same name')
-
     def select_prof_dir(self):
         '''Select filename to save profile data to'''
 
-        username = self.data.get('username', '') if hasattr(self, 'data') else ''
+        username = self.prof_user if hasattr(self, 'prof_user') else ''
         filename = QFileDialog.getSaveFileName(self, 'Save as', username, "JSON files (*.json)")[0]
-        self.export_prof_data_edit.setText(filename)
+        self.export_prof_data_line.setText(filename)
 
 
     #*#########   User Tweets Page    ###########
@@ -188,6 +139,7 @@ class TweetyScrapy(QMainWindow):
 
         if self.is_valid_X_user_url(url):
             self.loading(self.loading_anim_2, start=True)
+            self.tweets_user = url.split('/')[-1]
 
             # Tweets data parsing
             self.tweets_worker = TweetsThread(url, int(number))
@@ -199,6 +151,13 @@ class TweetyScrapy(QMainWindow):
             QMessageBox.warning(self, 'Invalid Input!',
                 "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
             )
+    
+    def select_tweets_dir(self):
+        '''Select filename to save profile data to'''
+
+        username = self.tweets_user if hasattr(self, 'tweets_user') else ''
+        filename = 'tweets_' + QFileDialog.getSaveFileName(self, 'Save as', username, "JSON files (*.json)")[0]
+        self.export_tweets_line.setText(filename)
     
     def on_tweets_ready(self, data):
         
@@ -214,6 +173,9 @@ class TweetyScrapy(QMainWindow):
         '''Get User Tweets when "Get" button is clicked'''
 
         self.loading(self.loading_anim_3)
+    
+    
+    #*#############     General methods     ##############
     
     def loading(self, label_name, start=True):
         """Show loading gif animation while parsing occurs in background"""
@@ -240,6 +202,33 @@ class TweetyScrapy(QMainWindow):
             label_name.loading_gif.stop()
             label_name.setVisible(False)
             del label_name.loading_gif
+    
+    def export_json_data(self, export_filepath_lineEdit, json_data_plainTextEdit):
+        '''Export profile data into selected json file'''
+
+        filename = export_filepath_lineEdit.text()
+
+        # if user clicked export with no data
+        if json_data_plainTextEdit.toPlainText() == '':
+            QMessageBox.warning(self, 'Error', 'No Data!\n'
+                'Please search for a username first to get its data')
+            return None
+        
+        # if user clicked export  with invalid file path
+        if filename != '':          # re.match(r'''[^<>:;,?"*|/^]+$''', filename) json validation for future
+            if not filename.endswith('.json'):
+                filename += '.json'
+            try:
+                with open(filename, 'w', encoding='utf-8') as f:
+                    f.write(json_data_plainTextEdit.toPlainText())
+                QMessageBox.information(self, 'Success!', f'Data Exported to\n {os.path.basename(filename)}')
+            except:
+                QMessageBox.critical(self, 'Json Error!', 'Error occured while exporting to json file')
+                return None
+        else:
+            QMessageBox.critical(self, 'Error', 'Export failed!\n'
+                'Please check file name, extension, or existing file with the same name')
+
 
 
 if __name__ == '__main__':
