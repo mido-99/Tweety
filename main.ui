@@ -109,6 +109,12 @@ QLineEdit[objectName*=&quot;export&quot;] {
        <string>User 
  Profile Data</string>
       </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
      </widget>
      <widget class="QPushButton" name="goto_user_tweets">
       <property name="geometry">
@@ -133,6 +139,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="text">
        <string>All User 
  Posts</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QLabel" name="title_home">

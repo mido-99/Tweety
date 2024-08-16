@@ -23,6 +23,8 @@ class TweetyScrapy(QMainWindow):
     def setUi(self):
         '''Setup UI elements that need to be set from code'''
         
+        self.setWindowTitle('X Scraper')
+        self.setWindowIcon(QIcon('icons/x_logo.jpg'))   #<a href="https://www.freepik.com/free-vector/new-2023-twitter-x-logo-black-background_57643008.htm#query=x%20logo&position=17&from_view=keyword&track=ais_hybrid&uuid=a5b000e0-0af2-476e-b384-21f1da14cd59">Image by starline</a> on Freepik
         self.backButtons()
 
     def backButtons(self):
@@ -44,6 +46,7 @@ class TweetyScrapy(QMainWindow):
         self.pushButton.clicked.connect(self.test)
         # Home page
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
+        # self.goto_profile.setDefault(True)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
         # Profile page
         self.prof_url_btn.clicked.connect(self.get_profile)
