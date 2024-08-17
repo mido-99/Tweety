@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox
     QInputDialog)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, Qt
 import sys
 import os
 import re
@@ -124,8 +124,12 @@ class TweetyScrapy(QMainWindow):
     
     def test(self):
         
-        pass
-    
+        with open('Cristiano_tweets.json', 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.tweets_json_plainEdit.setPlainText(content)
+            self.tweets_json_plainEdit.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+
+
     def handle_custom_number(self, index):
         
         numbers_list = [self.tweets_num_combo.itemText(i) for i in range(self.tweets_num_combo.count())]

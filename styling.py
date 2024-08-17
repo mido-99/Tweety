@@ -100,14 +100,15 @@ STYLESHEET = f"""
     }}
 
     QScrollBar:vertical {{
-        background-color: {x_black_gradient};
-        width: 6px;
-        margin: 15px 3px 15px 3px;
+        background: {twitter_blue_gradient};
+        width: 16px;
         border-radius: 4px;
     }}
-    QScrollBar::handle:vertical {{
-        background-color: {twitter_blue_gradient};
-        border-radius: 4px;
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {{
+    background: {white_gradient};  /* Color of the track above and below the handle */
+    }}
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {{
+    background: {white_gradient};  /* Color of the track above and below the handle */
     }}
 
     QCheckBox {{
