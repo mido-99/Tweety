@@ -77,7 +77,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="home">
      <property name="styleSheet">
@@ -110,9 +110,12 @@ QLineEdit[objectName*=&quot;export&quot;] {
  Profile Data</string>
       </property>
       <property name="autoDefault">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
       <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
        <bool>false</bool>
       </property>
      </widget>
@@ -141,6 +144,12 @@ QLineEdit[objectName*=&quot;export&quot;] {
  Posts</string>
       </property>
       <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
        <bool>false</bool>
       </property>
      </widget>
@@ -222,6 +231,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="text">
        <string/>
       </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QPlainTextEdit" name="prof_json_plainEdit">
       <property name="geometry">
@@ -248,6 +260,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="text">
        <string>Get</string>
       </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLabel" name="loading_anim">
       <property name="geometry">
@@ -273,6 +288,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       </property>
       <property name="text">
        <string>Export</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLineEdit" name="export_prof_data_line">
@@ -355,6 +373,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="text">
        <string/>
       </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLineEdit" name="user_twts_edit">
       <property name="geometry">
@@ -390,6 +411,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       </property>
       <property name="text">
        <string>Get</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPlainTextEdit" name="tweets_json_plainEdit">
@@ -462,6 +486,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="text">
        <string>Test</string>
       </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
@@ -518,6 +545,9 @@ QLineEdit[objectName*=&quot;export&quot;] {
       </property>
       <property name="text">
        <string>Export</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
