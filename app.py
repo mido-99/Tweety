@@ -1,13 +1,16 @@
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox, QFileDialog,
-    QInputDialog)
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox,
+    QFileDialog, QInputDialog)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
-from PyQt5.QtCore import QSize, Qt
+from PyQt5.QtCore import QSize
+
 import sys
 import os
 import re
 import json
+import dotenv 
 from functools import partial
+
 from worker import ProfileThread, TweetsThread
 from styling import STYLESHEET
 
@@ -63,10 +66,10 @@ class TweetyScrapy(QMainWindow):
             self.export_tweets_line, self.tweets_json_plainEdit))
         self.tweets_dir_btn.clicked.connect(self.select_tweets_dir)
 
-
     def handle_comboboxes(self):
         self.tweets_num_combo.activated.connect(self.handle_custom_number)
 
+    # Navigation Buttons
     def goto_user_prof_data(self):
         self.stackedWidget.setCurrentIndex(1)
     
@@ -76,6 +79,23 @@ class TweetyScrapy(QMainWindow):
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
 
+    # Check existing cookies
+    def cookie_exists(self):
+        
+        return bool(self.COOKIE)
+
+    def check_cookie(self):
+        '''Checks if there's existing twitter session cookies in "cookies" file'''
+
+        if os.path.exists('cookie.env'):
+            self.COOKIE = dotenv.dotenv_values('cookie.env')['cookie']
+        else:
+            QMessageBox.information(self, 'Cooke not found!',
+                '''Make sure to add "cookie.env" file in app's directory 
+                with logged in cookies for the app to work.''')
+
+    def test(self):        
+        pass
 
     #*###########   Profile Data Page    #############
     
@@ -121,14 +141,6 @@ class TweetyScrapy(QMainWindow):
 
 
     #*#########   User Tweets Page    ###########
-    
-    def test(self):
-        
-        with open('Cristiano_tweets.json', 'r', encoding='utf-8') as f:
-            content = f.read()
-            self.tweets_json_plainEdit.setPlainText(content)
-            self.tweets_json_plainEdit.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-
 
     def handle_custom_number(self, index):
         
@@ -236,4 +248,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = TweetyScrapy()
     window.show()
+    window.check_cookie()
     sys.exit(app.exec_())
