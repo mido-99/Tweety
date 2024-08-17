@@ -82,7 +82,7 @@ class TweetyScrapy(QMainWindow):
     # Check existing cookies
     def cookie_exists(self):
         
-        return bool(self.COOKIE)
+        return bool(hasattr(self, 'COOKIE'))
 
     def check_cookie(self):
         '''Checks if there's existing twitter session cookies in "cookies" file'''
@@ -92,15 +92,20 @@ class TweetyScrapy(QMainWindow):
         else:
             QMessageBox.information(self, 'Cooke not found!',
                 '''Make sure to add "cookie.env" file in app's directory 
-                with logged in cookies for the app to work.''')
+                with logged in cookies.''')
 
-    def test(self):        
-        pass
 
     #*###########   Profile Data Page    #############
     
     def get_profile(self):
         '''Get profile data when "Get" button is clicked'''
+        
+        while not self.cookie_exists():
+            QMessageBox.critical(self, 'Cookie Needed!', '''
+                    Please create "cookie.env" file in app's directory first!
+                '''.strip()
+                )
+            return False
         
         url = self.prof_url_line.text()
         if self.is_valid_X_user_url(url):
@@ -117,7 +122,10 @@ class TweetyScrapy(QMainWindow):
             QMessageBox.warning(self, 'Invalid URL!',
                 "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
             )
-    
+
+    def test(self):
+        pass
+
     def is_valid_X_user_url(self, string):
         '''Validate passed text is a valid x.com url'''
 
@@ -156,6 +164,13 @@ class TweetyScrapy(QMainWindow):
     def get_user_tweets(self):
         '''Get User Tweets when "Get" button is clicked'''
 
+        while not self.cookie_exists():
+            QMessageBox.critical(self, 'Cookie Needed!', '''
+                    Please create "cookie.env" file in app's directory first!
+                '''.strip()
+                )
+            return False
+
         url = self.user_twts_edit.text()
         number = self.tweets_num_combo.itemText(self.tweets_num_combo.currentIndex())
 
@@ -190,6 +205,10 @@ class TweetyScrapy(QMainWindow):
 
 
     #*#############     General methods     ##############
+    
+    def show_help(self):
+        
+        print('help Done!')
     
     def loading(self, label_name, start=True):
         """Show loading gif animation while parsing occurs in background"""
