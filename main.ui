@@ -26,31 +26,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">* {
-font-size: 17px;
-}
-
-QLabel[objectName*=&quot;title&quot;]{
-    qproperty-alignment: 'AlignCenter';
-	font-size: 30px;
-}
-
-QLabel {
-	font-size: 18px;
-}
-
-QPushButton[objectName*=&quot;back&quot;] {
-    border: none;
-}
-
-QPlainTextEdit {
-	font-size: 16px;
-}
-
-QLineEdit[objectName*=&quot;export&quot;] {
-	font-size: 12px;
-}
-</string>
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
@@ -69,9 +45,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
      </size>
     </property>
     <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-     </font>
+     <font/>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
@@ -81,9 +55,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
     </property>
     <widget class="QWidget" name="home">
      <property name="styleSheet">
-      <string notr="true">QPushButton {
-	font-size: 30px;
-}</string>
+      <string notr="true"/>
      </property>
      <widget class="QPushButton" name="goto_profile">
       <property name="geometry">
@@ -101,9 +73,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
        </size>
       </property>
       <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-       </font>
+       <font/>
       </property>
       <property name="text">
        <string>User 
@@ -135,9 +105,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
        </size>
       </property>
       <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-       </font>
+       <font/>
       </property>
       <property name="text">
        <string>All User 
@@ -175,7 +143,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>120</y>
+        <y>125</y>
         <width>111</width>
         <height>21</height>
        </rect>
@@ -193,7 +161,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>170</x>
         <y>120</y>
         <width>490</width>
-        <height>24</height>
+        <height>28</height>
        </rect>
       </property>
      </widget>
@@ -254,7 +222,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>670</x>
         <y>120</y>
         <width>93</width>
-        <height>24</height>
+        <height>28</height>
        </rect>
       </property>
       <property name="text">
@@ -307,7 +275,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="geometry">
        <rect>
         <x>571</x>
-        <y>551</y>
+        <y>550</y>
         <width>31</width>
         <height>30</height>
        </rect>
@@ -322,15 +290,13 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>120</y>
+        <y>122</y>
         <width>121</width>
         <height>21</height>
        </rect>
       </property>
       <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-       </font>
+       <font/>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
@@ -383,7 +349,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>170</x>
         <y>120</y>
         <width>491</width>
-        <height>24</height>
+        <height>28</height>
        </rect>
       </property>
      </widget>
@@ -406,7 +372,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
         <x>670</x>
         <y>120</y>
         <width>93</width>
-        <height>24</height>
+        <height>28</height>
        </rect>
       </property>
       <property name="text">
@@ -500,9 +466,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
        </rect>
       </property>
       <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-       </font>
+       <font/>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
@@ -525,7 +489,7 @@ QLineEdit[objectName*=&quot;export&quot;] {
       <property name="geometry">
        <rect>
         <x>571</x>
-        <y>551</y>
+        <y>550</y>
         <width>31</width>
         <height>30</height>
        </rect>
