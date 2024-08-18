@@ -21,7 +21,7 @@ class TweetyScrapy(QMainWindow):
     COOKIE = None
     
     def __init__(self):
-        super(TweetyScrapy, self).__init__()
+        super().__init__()
         uic.loadUi('main.ui', self)
         self.setUi()
         self.handle_buttons()
@@ -59,6 +59,7 @@ class TweetyScrapy(QMainWindow):
             page = self.stackedWidget.widget(idx)            
             button = GifButton('icons/help_slow.gif', 'cookie', page)
             button.setGeometry(700, 0, 100, 40)
+            
             # print(f"pos(): {button.pos()}")
             # print(f"x(): {button.x()}")
             # print(f"y(): {button.y()}")
