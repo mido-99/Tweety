@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox,
-    QFileDialog, QInputDialog)
+    QFileDialog, QInputDialog, QWidget, QVBoxLayout)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, Qt
 
 import sys
 import os
@@ -12,10 +12,13 @@ import dotenv
 from functools import partial
 
 from worker import ProfileThread, TweetsThread
+from custom_widgets import GifButton
 from styling import STYLESHEET
 
 
 class TweetyScrapy(QMainWindow):
+    
+    COOKIE = None
     
     def __init__(self):
         super(TweetyScrapy, self).__init__()
@@ -78,11 +81,22 @@ class TweetyScrapy(QMainWindow):
 
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
-
+    
+    def test(self):
+        for idx in range(self.stackedWidget.count()):
+            page = self.stackedWidget.widget(idx)            
+            lay = page.layout() or QVBoxLayout(page)
+            page.setLayout(lay)
+            button = GifButton('icons/help_slow.gif', 'cookie')
+            lay.addWidget(button)
+            lay.setContentsMargins(0, 0, 0, 0)
+            lay.setAlignment(button, Qt.AlignTop | Qt.AlignRight)
+        
+    
     # Check existing cookies
     def cookie_exists(self):
         
-        return bool(hasattr(self, 'COOKIE'))
+        return bool(self.COOKIE)
 
     def check_cookie(self):
         '''Checks if there's existing twitter session cookies in "cookies" file'''
@@ -122,9 +136,6 @@ class TweetyScrapy(QMainWindow):
             QMessageBox.warning(self, 'Invalid URL!',
                 "Please enter a valid x account url!\n (Only twitter.com & x.com Domains are allowed)"
             )
-
-    def test(self):
-        pass
 
     def is_valid_X_user_url(self, string):
         '''Validate passed text is a valid x.com url'''
