@@ -33,9 +33,9 @@ class TweetyScrapy(QMainWindow):
         self.setWindowTitle('X Scraper')
         self.setWindowIcon(QIcon('icons/x_logo.jpg'))   #<a href="https://www.freepik.com/free-vector/new-2023-twitter-x-logo-black-background_57643008.htm#query=x%20logo&position=17&from_view=keyword&track=ais_hybrid&uuid=a5b000e0-0af2-476e-b384-21f1da14cd59">Image by starline</a> on Freepik
         self.backButtons()
-
+        self.helpButtons()
+        
         self.setStyleSheet(STYLESHEET)
-        #TODO Vertical Scrollbar has issue in up & down buttons
 
     def backButtons(self):
         """Setup backButtons of pages & set their common functions"""
@@ -49,7 +49,22 @@ class TweetyScrapy(QMainWindow):
             btn.setIconSize(QSize(30, 30))
             btn.setGeometry(0, 0, 30, 30)
             # Function
-            btn.clicked.connect(self.go_home)    
+            btn.clicked.connect(self.go_home)
+    
+    def helpButtons(self):
+        """Setup custom help buttons to show help about how to add cookie"""
+
+        for idx in range(self.stackedWidget.count()):
+            # UI
+            page = self.stackedWidget.widget(idx)            
+            lay = page.layout() or QVBoxLayout(page)
+            page.setLayout(lay)
+            button = GifButton('icons/help_slow.gif', 'cookie')
+            lay.addWidget(button)
+            lay.setContentsMargins(0, 0, 0, 0)
+            lay.setAlignment(button, Qt.AlignTop | Qt.AlignRight)
+            # Function
+            button.clicked.connect(self.show_help)
     
     def handle_buttons(self):
         
@@ -83,16 +98,8 @@ class TweetyScrapy(QMainWindow):
         self.stackedWidget.setCurrentIndex(0)
     
     def test(self):
-        for idx in range(self.stackedWidget.count()):
-            page = self.stackedWidget.widget(idx)            
-            lay = page.layout() or QVBoxLayout(page)
-            page.setLayout(lay)
-            button = GifButton('icons/help_slow.gif', 'cookie')
-            lay.addWidget(button)
-            lay.setContentsMargins(0, 0, 0, 0)
-            lay.setAlignment(button, Qt.AlignTop | Qt.AlignRight)
-        
-    
+        pass
+
     # Check existing cookies
     def cookie_exists(self):
         

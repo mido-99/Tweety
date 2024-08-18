@@ -18,4 +18,5 @@ class GifButton(QPushButton):
     def style(self):
         self.setStyleSheet('''
             font-size: 20px;
+            margin: 4px, 4px;
         ''')
