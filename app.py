@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox,
-    QFileDialog, QInputDialog, QWidget, QVBoxLayout)
+    QFileDialog, QInputDialog, QWidget)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
-from PyQt5.QtCore import QSize, Qt
+from PyQt5.QtCore import QSize
 
 import sys
 import os
@@ -57,12 +57,14 @@ class TweetyScrapy(QMainWindow):
         for idx in range(self.stackedWidget.count()):
             # UI
             page = self.stackedWidget.widget(idx)            
-            lay = page.layout() or QVBoxLayout(page)
-            page.setLayout(lay)
-            button = GifButton('icons/help_slow.gif', 'cookie')
-            lay.addWidget(button)
-            lay.setContentsMargins(0, 0, 0, 0)
-            lay.setAlignment(button, Qt.AlignTop | Qt.AlignRight)
+            button = GifButton('icons/help_slow.gif', 'cookie', page)
+            button.setGeometry(700, 0, 100, 40)
+            # print(f"pos(): {button.pos()}")
+            # print(f"x(): {button.x()}")
+            # print(f"y(): {button.y()}")
+            # print(f"rect(): {button.rect()}")
+            # print(f"size(): {button.size()}")
+
             # Function
             button.clicked.connect(self.show_help)
     

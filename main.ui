@@ -51,7 +51,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="home">
      <property name="styleSheet">
@@ -264,7 +264,7 @@
      <widget class="QPushButton" name="export_prof_btn">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>670</x>
         <y>550</y>
         <width>101</width>
         <height>30</height>
@@ -280,9 +280,9 @@
      <widget class="QLineEdit" name="export_prof_data_line">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>30</x>
         <y>550</y>
-        <width>490</width>
+        <width>621</width>
         <height>30</height>
        </rect>
       </property>
@@ -290,7 +290,7 @@
      <widget class="QToolButton" name="prof_dir_btn">
       <property name="geometry">
        <rect>
-        <x>571</x>
+        <x>620</x>
         <y>550</y>
         <width>31</width>
         <height>30</height>
@@ -478,9 +478,9 @@
      <widget class="QLineEdit" name="export_tweets_line">
       <property name="geometry">
        <rect>
-        <x>110</x>
+        <x>30</x>
         <y>550</y>
-        <width>490</width>
+        <width>621</width>
         <height>30</height>
        </rect>
       </property>
@@ -488,7 +488,7 @@
      <widget class="QToolButton" name="tweets_dir_btn">
       <property name="geometry">
        <rect>
-        <x>571</x>
+        <x>620</x>
         <y>550</y>
         <width>31</width>
         <height>30</height>
@@ -501,7 +501,7 @@
      <widget class="QPushButton" name="export_tweets_btn">
       <property name="geometry">
        <rect>
-        <x>610</x>
+        <x>670</x>
         <y>550</y>
         <width>101</width>
         <height>30</height>
