@@ -228,8 +228,32 @@ class TweetyScrapy(QMainWindow):
     #*#############     General methods     ##############
     
     def show_help(self):
+        #TODO To be named "cookie_help", while current message to be moved to "desclaimer" 
+        #TODO May need to move them to custom_widgets then add ! button in UI
         
-        print('help Done!')
+        msg_box = QMessageBox(self)
+        msg_box.setIcon(QMessageBox.Information)
+        msg_box.setStyleSheet(STYLESHEET)
+        msg_box.setStyleSheet('''QLabel{min-width: 700px;}''')
+
+        msg_box.setWindowTitle("Important Notice Regarding Scraping on X (Twitter)")
+        msg_box.setText('''
+            Before proceeding with scraping data from X, it's crucial to understand the potential risks and responsibilities involved.\n
+            Recent updates to X's platform have introduced stricter measures to protect user data and privacy. As a result, certain actions, including scraping, may require you to include your logged-in session cookies to access specific information.
+
+            What This Means?
+            Cookies and Account Identification: When you use your session cookies to scrape data from X, the platform can directly associate the activity with your personal account. This means that X can identify your account as the source of the scraping activity.
+
+            Potential Consequences: Engaging in scraping activities, especially with your logged-in session cookies, may violate X's terms of service. X may detect this behavior and take actions against your account. Consequences can range from temporary limitations on your account to a complete suspension.
+
+            Your Responsibility:
+            Be Cautious! If you decide to proceed with scraping X, you do so at your own risk. \n
+            While staying at normal scraping rate can go unnoticed, Be aware that you are fully responsible for any actions taken by X as a result of your activities. 
+        '''.replace('  ', ''))
+
+        # # Set the size of the QMessageBox
+
+        msg_box.exec_()
     
     def loading(self, label_name, start=True):
         """Show loading gif animation while parsing occurs in background"""
