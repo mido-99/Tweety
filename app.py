@@ -12,7 +12,7 @@ import dotenv
 from functools import partial
 
 from worker import ProfileThread, TweetsThread
-from custom_widgets import GifButton
+from custom_widgets import GifButton, CustomMessageBox
 from styling import STYLESHEET
 
 
@@ -32,6 +32,7 @@ class TweetyScrapy(QMainWindow):
         
         self.setWindowTitle('X Scraper')
         self.setWindowIcon(QIcon('icons/x_logo.jpg'))   #<a href="https://www.freepik.com/free-vector/new-2023-twitter-x-logo-black-background_57643008.htm#query=x%20logo&position=17&from_view=keyword&track=ais_hybrid&uuid=a5b000e0-0af2-476e-b384-21f1da14cd59">Image by starline</a> on Freepik
+        self.setFixedSize(self.size())
         self.backButtons()
         self.helpButtons()
         
@@ -67,7 +68,7 @@ class TweetyScrapy(QMainWindow):
             # print(f"size(): {button.size()}")
 
             # Function
-            button.clicked.connect(self.show_help)
+            button.clicked.connect(self.cookie_help)
     
     def handle_buttons(self):
         
@@ -227,17 +228,13 @@ class TweetyScrapy(QMainWindow):
 
     #*#############     General methods     ##############
     
-    def show_help(self):
+    def cookie_help(self):
         #TODO To be named "cookie_help", while current message to be moved to "desclaimer" 
         #TODO May need to move them to custom_widgets then add ! button in UI
         
-        msg_box = QMessageBox(self)
-        msg_box.setIcon(QMessageBox.Information)
-        msg_box.setStyleSheet(STYLESHEET)
-        msg_box.setStyleSheet('''QLabel{min-width: 700px;}''')
-
-        msg_box.setWindowTitle("Important Notice Regarding Scraping on X (Twitter)")
-        msg_box.setText('''
+        msg_box = CustomMessageBox(QMessageBox.Information,
+            "Important Notice Regarding Scraping on X (Twitter)", 
+            '''
             Before proceeding with scraping data from X, it's crucial to understand the potential risks and responsibilities involved.\n
             Recent updates to X's platform have introduced stricter measures to protect user data and privacy. As a result, certain actions, including scraping, may require you to include your logged-in session cookies to access specific information.
 
@@ -249,12 +246,11 @@ class TweetyScrapy(QMainWindow):
             Your Responsibility:
             Be Cautious! If you decide to proceed with scraping X, you do so at your own risk. \n
             While staying at normal scraping rate can go unnoticed, Be aware that you are fully responsible for any actions taken by X as a result of your activities. 
-        '''.replace('  ', ''))
-
-        # # Set the size of the QMessageBox
-
+            '''.replace('  ', ''),
+            parent=self, styling=STYLESHEET
+        )
         msg_box.exec_()
-    
+
     def loading(self, label_name, start=True):
         """Show loading gif animation while parsing occurs in background"""
 

@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QPushButton
+from PyQt5.QtWidgets import QPushButton, QMessageBox
 from PyQt5.QtGui import QIcon, QMovie
 from PyQt5.QtCore import QSize
 
@@ -38,3 +38,17 @@ class GifButton(QPushButton):
             font-size: 20px;
             margin: 4px, 4px;
         ''')
+
+
+class CustomMessageBox(QMessageBox):
+    
+    def __init__(self, icon, title, text, parent=None, styling=None):
+        super().__init__(parent)
+        
+        self.setIcon(icon)
+        self.setWindowTitle(title)
+        self.setText(text)
+        
+        self.setStyleSheet('''QLabel{min-width: 700px;}''')
+        if styling:
+            self.setStyleSheet(self.styleSheet() + styling)
