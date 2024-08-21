@@ -8,7 +8,7 @@ STYLESHEET = f"""
     /*      #* Global widgets       */ 
     QWidget {{
         background-color: {x_black_gradient};
-        color: {white_gradient};
+        color: white;
         font-family: Arial, sans-serif;
     }}
     QPushButton {{
@@ -145,6 +145,7 @@ STYLESHEET = f"""
     QRadioButton::indicator:checked {{
         background-color: {twitter_blue_gradient};
     }}
+    
     QInputDialog {{
         font-size: 14px;
     }}
@@ -152,6 +153,9 @@ STYLESHEET = f"""
         font-size: 20px;
     }}
     QInputDialog QPushButton {{
+        min-width: 50px;
+    }}
+    QMessageBox QPushButton {{
         min-width: 50px;
     }}
 

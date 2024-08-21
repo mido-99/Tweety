@@ -137,7 +137,7 @@ class TweetyScrapy(QMainWindow):
         
         while not self.cookie_exists():
             QMessageBox.critical(self, 'Cookie Needed!', '''
-                    Please create "cookie.env" file in app's directory first!
+                    Please create "cookie.env" file in app's directory first! (For help, press "cookie?")
                 '''.strip()
                 )
             return False
@@ -199,7 +199,7 @@ class TweetyScrapy(QMainWindow):
 
         while not self.cookie_exists():
             QMessageBox.critical(self, 'Cookie Needed!', '''
-                    Please create "cookie.env" file in app's directory first!
+                    Please create "cookie.env" file in app's directory first! (For help, press "cookie?")
                 '''.strip()
                 )
             return False
@@ -246,7 +246,7 @@ class TweetyScrapy(QMainWindow):
             '''
             1. Open Your Browser:\n
             2. Open Developer Tools:
-            • Press FIT or right-click (choose developer tools)\n to open Developer Tools.\n
+            • Press F12 to open Developer Tools \n (or right-click & choose developer tools).\n
             3. Visit Any X (Twitter) Page where you are logged in.\n
             4. Filter:
             • In the Developer Tools, go to the Network tab.
@@ -256,7 +256,7 @@ class TweetyScrapy(QMainWindow):
             • Go to the tab within the selected request.
             • Scroll down in the Request Headers section.
             • Find the cookie field and copy its entire value.
-            '''.replace('  ', ''),
+            '''.strreplace('  ', ''),
             parent=self, 
             styling=STYLESHEET
         )
@@ -278,7 +278,7 @@ class TweetyScrapy(QMainWindow):
             Your Responsibility:
             Be Cautious! If you decide to proceed with scraping X, you do so at your own risk. \n
             While staying at normal scraping rate can go unnoticed, Be aware that you are fully responsible for any actions taken by X as a result of your activities. 
-            '''.replace('  ', ''),
+            '''.strreplace('  ', ''),
             parent=self, 
             styling=STYLESHEET
         )
