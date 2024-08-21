@@ -244,7 +244,26 @@ class TweetyScrapy(QMainWindow):
     
     def show_cookie_help(self):
         
-        pass
+        msg_box = CustomMessageBox(QMessageBox.Information,
+            "Instructions for Getting the Request Cookie from Your Browser", 
+            '''
+            1. Open Your Browser:\n
+            2. Open Developer Tools:
+            • Press FIT or right-click (choose developer tools)\n to open Developer Tools.\n
+            3. Visit Any X (Twitter) Page where you are logged in.\n
+            4. Filter:
+            • In the Developer Tools, go to the Network tab.
+            • In the filter bar, select Fetch/XHR.\n
+            5. Click on one of the filtered requests.\n
+            6. Copy the Cookie:
+            • Go to the tab within the selected request.
+            • Scroll down in the Request Headers section.
+            • Find the cookie field and copy its entire value.
+            '''.replace('  ', ''),
+            parent=self, 
+            styling=STYLESHEET
+        )
+        msg_box.exec_()
         
     def show_desclaimer(self):
         
@@ -263,7 +282,8 @@ class TweetyScrapy(QMainWindow):
             Be Cautious! If you decide to proceed with scraping X, you do so at your own risk. \n
             While staying at normal scraping rate can go unnoticed, Be aware that you are fully responsible for any actions taken by X as a result of your activities. 
             '''.replace('  ', ''),
-            parent=self, styling=STYLESHEET
+            parent=self, 
+            styling=STYLESHEET
         )
         msg_box.exec_()
 

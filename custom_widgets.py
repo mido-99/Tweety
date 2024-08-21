@@ -49,6 +49,13 @@ class CustomMessageBox(QMessageBox):
         self.setWindowTitle(title)
         self.setText(text)
         
-        self.setStyleSheet('''QLabel{min-width: 700px;}''')
+        self.setStyleSheet('''
+            QLabel {
+                min-width: 600px;
+            }
+            QPushButton {
+                min-width: 50px;
+            }
+        ''')
         if styling:
             self.setStyleSheet(self.styleSheet() + styling)
