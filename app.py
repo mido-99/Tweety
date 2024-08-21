@@ -30,14 +30,18 @@ class TweetyScrapy(QMainWindow):
     def setUi(self):
         '''Setup UI elements that need to be set from code'''
         
+        # App Window
         self.setWindowTitle('X Scraper')
         self.setWindowIcon(QIcon('icons/x_logo.jpg'))   #<a href="https://www.freepik.com/free-vector/new-2023-twitter-x-logo-black-background_57643008.htm#query=x%20logo&position=17&from_view=keyword&track=ais_hybrid&uuid=a5b000e0-0af2-476e-b384-21f1da14cd59">Image by starline</a> on Freepik
         self.setFixedSize(self.size())
+        # Buttons
         self.backButtons()
         self.helpButtons()
-        
+        self.desclaimerButton()
+        # Styling
         self.setStyleSheet(STYLESHEET)
 
+    # Global buttons
     def backButtons(self):
         """Setup backButtons of pages & set their common functions"""
         
@@ -68,15 +72,25 @@ class TweetyScrapy(QMainWindow):
             # print(f"size(): {button.size()}")
 
             # Function
-            button.clicked.connect(self.cookie_help)
+            button.clicked.connect(self.show_cookie_help)
     
+    def desclaimerButton(self):
+        
+        self.disclaimer_btn.setIcon(QIcon("icons/exclamation-128.png"))
+        self.disclaimer_btn.setStyleSheet('''
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #ff0000, stop:1 #8f0010)
+        ''')
+
     def handle_buttons(self):
         
         self.pushButton.clicked.connect(self.test)
         # Home page
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
-        # self.goto_profile.setDefault(True)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
+        self.disclaimer_btn.clicked.connect(self.show_desclaimer)
         # Profile page
         self.prof_url_btn.clicked.connect(self.get_profile)
         self.export_prof_btn.clicked.connect(partial(self.export_json_data, 
@@ -228,9 +242,11 @@ class TweetyScrapy(QMainWindow):
 
     #*#############     General methods     ##############
     
-    def cookie_help(self):
-        #TODO To be named "cookie_help", while current message to be moved to "desclaimer" 
-        #TODO May need to move them to custom_widgets then add ! button in UI
+    def show_cookie_help(self):
+        
+        pass
+        
+    def show_desclaimer(self):
         
         msg_box = CustomMessageBox(QMessageBox.Information,
             "Important Notice Regarding Scraping on X (Twitter)", 
