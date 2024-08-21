@@ -1,8 +1,8 @@
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QPushButton, QMessageBox,
-    QFileDialog, QInputDialog, QWidget)
+    QFileDialog, QInputDialog)
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QMovie
-from PyQt5.QtCore import QSize
+from PyQt5.QtCore import QSize, Qt
 
 import sys
 import os
@@ -191,7 +191,8 @@ class TweetyScrapy(QMainWindow):
         numbers_list = [self.tweets_num_combo.itemText(i) for i in range(self.tweets_num_combo.count())]
 
         if self.tweets_num_combo.itemText(index) == "Custom":
-            number, ok = QInputDialog.getInt(self, 'User Tweets', 'Select tweets number to get', 1, 1, 10000)
+            number, ok = QInputDialog.getInt(self, 'User Tweets', 'Select tweets number to get', 1, 1, 10000,
+                    flags= Qt.Window | Qt.WindowTitleHint | Qt.WindowCloseButtonHint)
             if ok:
                 if str(number) not in numbers_list:     # If input doesn't exist
                     self.tweets_num_combo.insertItem(self.tweets_num_combo.count() -1, str(number))

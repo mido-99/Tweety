@@ -145,6 +145,15 @@ STYLESHEET = f"""
     QRadioButton::indicator:checked {{
         background-color: {twitter_blue_gradient};
     }}
+    QInputDialog {{
+        font-size: 14px;
+    }}
+    QInputDialog QSpinBox {{
+        font-size: 20px;
+    }}
+    QInputDialog QPushButton {{
+        min-width: 50px;
+    }}
 
     /*      #* Custom widgets       */
     #stackedWidget #home QPushButton {{
