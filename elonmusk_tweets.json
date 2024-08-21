@@ -1,0 +1,2696 @@
+[
+  {
+    "attached_media": null,
+    "bookmark_count": 137,
+    "conversation_id": "1826363538967068705",
+    "created": "Wed Aug 21 20:59:34 +0000 2024",
+    "favorite_count": 15404,
+    "has_translate": false,
+    "id": "1826363538967068705",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 75,
+    "reply_count": 1659,
+    "retweet_count": 1482,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The Two Towers",
+    "url": null,
+    "user_id": "44196397",
+    "views": "1434997"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1826253203555713263",
+    "created": "Wed Aug 21 13:41:08 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1826253203555713263",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1539,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1170886272",
+        "indices": [
+          3,
+          14
+        ],
+        "name": "Adam Paul Laxalt",
+        "screen_name": "AdamLaxalt"
+      },
+      {
+        "id_str": "50361094",
+        "indices": [
+          83,
+          88
+        ],
+        "name": "Mountain States Legal Foundation",
+        "screen_name": "MSLF"
+      }
+    ],
+    "text": "RT @AdamLaxalt: My firm Cooper &amp; Kirk has teamed up again with Mountain States @MSLF to fight against DEI in the Federal Government. This t…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "44"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 5129,
+    "conversation_id": "1826251603122561207",
+    "created": "Wed Aug 21 13:34:46 +0000 2024",
+    "favorite_count": 107199,
+    "has_translate": false,
+    "id": "1826251603122561207",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "qst",
+    "media_type": null,
+    "quote_count": 1134,
+    "reply_count": 6567,
+    "retweet_count": 31367,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Wow",
+    "url": null,
+    "user_id": "44196397",
+    "views": "8680687"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVgjvjyacAAKdED.jpg"
+    ],
+    "bookmark_count": 1741,
+    "conversation_id": "1826248951449981237",
+    "created": "Wed Aug 21 13:24:14 +0000 2024",
+    "favorite_count": 92771,
+    "has_translate": false,
+    "id": "1826248951449981237",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 337,
+    "reply_count": 2832,
+    "retweet_count": 14602,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1319036828964454402",
+        "indices": [
+          8,
+          23
+        ],
+        "name": "Community Notes",
+        "screen_name": "CommunityNotes"
+      }
+    ],
+    "text": "Another @communitynotes win 😂 https://t.co/50p6NwZrjZ",
+    "url": [
+      "https://twitter.com/elonmusk/status/1826248951449981237/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "6652963"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1811,
+    "conversation_id": "1826247487398850903",
+    "created": "Wed Aug 21 13:18:25 +0000 2024",
+    "favorite_count": 65607,
+    "has_translate": false,
+    "id": "1826247487398850903",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "tr",
+    "media_type": null,
+    "quote_count": 475,
+    "reply_count": 3961,
+    "retweet_count": 15659,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Insane",
+    "url": null,
+    "user_id": "44196397",
+    "views": "8235081"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVcXSOfWwAAxY1Q.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1826246918374314325",
+    "created": "Wed Aug 21 13:16:10 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1826246918374314325",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2550,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "367237480",
+        "indices": [
+          3,
+          18
+        ],
+        "name": "James Stephenson",
+        "screen_name": "ICannot_Enough"
+      }
+    ],
+    "text": "RT @ICannot_Enough: I fixed the inflation meme: https://t.co/3dUHO9VibZ",
+    "url": [
+      "https://twitter.com/ICannot_Enough/status/1825953778471940604/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "44"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 6397,
+    "conversation_id": "1826242679371629016",
+    "created": "Wed Aug 21 12:59:19 +0000 2024",
+    "favorite_count": 274984,
+    "has_translate": false,
+    "id": "1826242679371629016",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "qst",
+    "media_type": null,
+    "quote_count": 2234,
+    "reply_count": 16415,
+    "retweet_count": 55000,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Wow",
+    "url": null,
+    "user_id": "44196397",
+    "views": "31706661"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1826241343183790085",
+    "created": "Wed Aug 21 12:54:00 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1826241343183790085",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 893,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "874776246592430080",
+        "indices": [
+          3,
+          15
+        ],
+        "name": "ALEX",
+        "screen_name": "ajtourville"
+      },
+      {
+        "id_str": "34743251",
+        "indices": [
+          102,
+          109
+        ],
+        "name": "SpaceX",
+        "screen_name": "SpaceX"
+      }
+    ],
+    "text": "RT @ajtourville: SpaceX is set to surpass Gemini 11's altitude record with its Polaris Dawn mission – @SpaceX Falcon 9 rocket will initiall…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "34"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVfYX7jaMAMxPxQ.jpg"
+    ],
+    "bookmark_count": 6553,
+    "conversation_id": "1826166083331731632",
+    "created": "Wed Aug 21 07:54:57 +0000 2024",
+    "favorite_count": 407919,
+    "has_translate": false,
+    "id": "1826166083331731632",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 2759,
+    "reply_count": 20421,
+    "retweet_count": 51644,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Literally last month https://t.co/tC5MrgYW5D",
+    "url": [
+      "https://twitter.com/elonmusk/status/1826166083331731632/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "34449822"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1825983888855863296/img/ltlEoaYBgnxsc-SD.jpg"
+    ],
+    "bookmark_count": 39344,
+    "conversation_id": "1826165038669087062",
+    "created": "Wed Aug 21 07:50:48 +0000 2024",
+    "favorite_count": 227025,
+    "has_translate": false,
+    "id": "1826165038669087062",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 2669,
+    "reply_count": 6577,
+    "retweet_count": 48292,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Wisdom\n https://t.co/NMbUbutfx1",
+    "url": [
+      "https://twitter.com/TheRabbitHole84/status/1825983979314409890/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "22370705"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3581,
+    "conversation_id": "1826134013205217364",
+    "created": "Wed Aug 21 05:47:31 +0000 2024",
+    "favorite_count": 82598,
+    "has_translate": false,
+    "id": "1826134013205217364",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 712,
+    "reply_count": 6371,
+    "retweet_count": 15534,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Exactly:\n\n“And then it dawned on me that the declining birth rate is not just a simple math problem - it fundamentally de-incentivizes civilization to look forward.”",
+    "url": null,
+    "user_id": "44196397",
+    "views": "19483884"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3310,
+    "conversation_id": "1826016080952991903",
+    "created": "Tue Aug 20 21:58:54 +0000 2024",
+    "favorite_count": 203368,
+    "has_translate": false,
+    "id": "1826016080952991903",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1445,
+    "reply_count": 11156,
+    "retweet_count": 40808,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "This path leads to bread lines &amp; ugly shoes",
+    "url": null,
+    "user_id": "44196397",
+    "views": "38333040"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 27319,
+    "conversation_id": "1826015426658415033",
+    "created": "Tue Aug 20 21:56:18 +0000 2024",
+    "favorite_count": 303114,
+    "has_translate": false,
+    "id": "1826015426658415033",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 9943,
+    "reply_count": 53058,
+    "retweet_count": 110792,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Since a lot of people have asked, here goes a super unscientific poll …\n\nWho will you vote for?",
+    "url": null,
+    "user_id": "44196397",
+    "views": "65090682"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVdOto0aMAER1Tj.jpg"
+    ],
+    "bookmark_count": 24531,
+    "conversation_id": "1826014723940429871",
+    "created": "Tue Aug 20 21:53:30 +0000 2024",
+    "favorite_count": 559992,
+    "has_translate": false,
+    "id": "1826014723940429871",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 6030,
+    "reply_count": 43218,
+    "retweet_count": 46585,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Nerfing of the gun emoji matches rise of the woke mind virus, as a core tenet is equating fake harm with real harm https://t.co/Mhx2HjcES9",
+    "url": [
+      "https://twitter.com/elonmusk/status/1826014723940429871/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "65217364"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1825885758760296448/img/eUcI5ZTum1TsCU0q.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1825946137792074098",
+    "created": "Tue Aug 20 17:20:58 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825946137792074098",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2754,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "34743251",
+        "indices": [
+          3,
+          10
+        ],
+        "name": "SpaceX",
+        "screen_name": "SpaceX"
+      }
+    ],
+    "text": "RT @SpaceX: Liftoff of Falcon 9! https://t.co/dnAl1CZ4LU",
+    "url": [
+      "https://twitter.com/SpaceX/status/1825885843426521365/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "129"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1825887682452664320/img/nYD0j30tx07UBkF2.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1825946113737896279",
+    "created": "Tue Aug 20 17:20:52 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825946113737896279",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2499,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "34743251",
+        "indices": [
+          3,
+          10
+        ],
+        "name": "SpaceX",
+        "screen_name": "SpaceX"
+      }
+    ],
+    "text": "RT @SpaceX: Successful landing, completing the first launch and landing for this Falcon booster https://t.co/GLFavJVFig",
+    "url": [
+      "https://twitter.com/SpaceX/status/1825887969292796071/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "103"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1111,
+    "conversation_id": "1825946079399129216",
+    "created": "Tue Aug 20 17:20:44 +0000 2024",
+    "favorite_count": 112774,
+    "has_translate": false,
+    "id": "1825946079399129216",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 346,
+    "reply_count": 5400,
+    "retweet_count": 11167,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Improving your Starlink Internet speed!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "30864221"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 7787,
+    "conversation_id": "1825786899014844702",
+    "created": "Tue Aug 20 06:48:12 +0000 2024",
+    "favorite_count": 265199,
+    "has_translate": false,
+    "id": "1825786899014844702",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2537,
+    "reply_count": 12951,
+    "retweet_count": 65826,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Amazing",
+    "url": null,
+    "user_id": "44196397",
+    "views": "22664251"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3509,
+    "conversation_id": "1825778823205380347",
+    "created": "Tue Aug 20 06:16:07 +0000 2024",
+    "favorite_count": 347736,
+    "has_translate": false,
+    "id": "1825778823205380347",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2099,
+    "reply_count": 15959,
+    "retweet_count": 56078,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Why not fix it right now? 🤷‍♂️",
+    "url": null,
+    "user_id": "44196397",
+    "views": "52110987"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3996,
+    "conversation_id": "1825768840090836999",
+    "created": "Tue Aug 20 05:36:27 +0000 2024",
+    "favorite_count": 184702,
+    "has_translate": false,
+    "id": "1825768840090836999",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1577,
+    "reply_count": 12914,
+    "retweet_count": 30189,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "From the standpoint of the faaaaaar left, this platform is far right, but it’s actually just centrist",
+    "url": null,
+    "user_id": "44196397",
+    "views": "20927821"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3509,
+    "conversation_id": "1825743803765895540",
+    "created": "Tue Aug 20 03:56:58 +0000 2024",
+    "favorite_count": 215303,
+    "has_translate": false,
+    "id": "1825743803765895540",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "art",
+    "media_type": null,
+    "quote_count": 1729,
+    "reply_count": 11201,
+    "retweet_count": 12989,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "🕺🕺🔫🔫🔫🔫🔫🔫🔫🔫🔫🔫🕺🕺",
+    "url": null,
+    "user_id": "44196397",
+    "views": "64353199"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3743,
+    "conversation_id": "1825743161076875773",
+    "created": "Tue Aug 20 03:54:24 +0000 2024",
+    "favorite_count": 202549,
+    "has_translate": false,
+    "id": "1825743161076875773",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1217,
+    "reply_count": 6957,
+    "retweet_count": 15043,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The gun emoji being nerfed in ~2016 marked the ascendance of woke_mind_virus.mp3.exe",
+    "url": null,
+    "user_id": "44196397",
+    "views": "43599295"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 4750,
+    "conversation_id": "1825741761039241475",
+    "created": "Tue Aug 20 03:48:51 +0000 2024",
+    "favorite_count": 195983,
+    "has_translate": false,
+    "id": "1825741761039241475",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1417,
+    "reply_count": 8425,
+    "retweet_count": 49975,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "When Snopes knows it’s a hoax",
+    "url": null,
+    "user_id": "44196397",
+    "views": "26018048"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3567,
+    "conversation_id": "1825738817275383950",
+    "created": "Tue Aug 20 03:37:09 +0000 2024",
+    "favorite_count": 254658,
+    "has_translate": false,
+    "id": "1825738817275383950",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 870,
+    "reply_count": 8375,
+    "retweet_count": 24615,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The Moon looks amazing",
+    "url": null,
+    "user_id": "44196397",
+    "views": "36430921"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVZGOLBXsAEknWR.jpg"
+    ],
+    "bookmark_count": 20549,
+    "conversation_id": "1825723913051000851",
+    "created": "Tue Aug 20 02:37:55 +0000 2024",
+    "favorite_count": 1150567,
+    "has_translate": false,
+    "id": "1825723913051000851",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 12011,
+    "reply_count": 59074,
+    "retweet_count": 122007,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "I am willing to serve https://t.co/BJhGbcA2e0",
+    "url": [
+      "https://twitter.com/elonmusk/status/1825723913051000851/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "75117870"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 4216,
+    "conversation_id": "1825715527446155288",
+    "created": "Tue Aug 20 02:04:36 +0000 2024",
+    "favorite_count": 245960,
+    "has_translate": false,
+    "id": "1825715527446155288",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 4308,
+    "reply_count": 53081,
+    "retweet_count": 17188,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Sometimes I wonder if I’m too defiant",
+    "url": null,
+    "user_id": "44196397",
+    "views": "56531974"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1632,
+    "conversation_id": "1825713908067479735",
+    "created": "Tue Aug 20 01:58:10 +0000 2024",
+    "favorite_count": 138274,
+    "has_translate": false,
+    "id": "1825713908067479735",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 538,
+    "reply_count": 4298,
+    "retweet_count": 13566,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Perfect name",
+    "url": null,
+    "user_id": "44196397",
+    "views": "39254198"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 693,
+    "conversation_id": "1825713065985188224",
+    "created": "Tue Aug 20 01:54:49 +0000 2024",
+    "favorite_count": 43538,
+    "has_translate": false,
+    "id": "1825713065985188224",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 209,
+    "reply_count": 2476,
+    "retweet_count": 5219,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Request a Community Note!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "17891595"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 685,
+    "conversation_id": "1825559831132172668",
+    "created": "Mon Aug 19 15:45:55 +0000 2024",
+    "favorite_count": 49394,
+    "has_translate": false,
+    "id": "1825559831132172668",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 304,
+    "reply_count": 5390,
+    "retweet_count": 5897,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "True",
+    "url": null,
+    "user_id": "44196397",
+    "views": "24564188"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 13411,
+    "conversation_id": "1825558840336920868",
+    "created": "Mon Aug 19 15:41:59 +0000 2024",
+    "favorite_count": 320336,
+    "has_translate": false,
+    "id": "1825558840336920868",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2874,
+    "reply_count": 15542,
+    "retweet_count": 76361,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "“Operation Orwell” more like it",
+    "url": null,
+    "user_id": "44196397",
+    "views": "36045597"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2932,
+    "conversation_id": "1825558181839618531",
+    "created": "Mon Aug 19 15:39:22 +0000 2024",
+    "favorite_count": 234682,
+    "has_translate": false,
+    "id": "1825558181839618531",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1557,
+    "reply_count": 12144,
+    "retweet_count": 43515,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "A reminder that free speech in America is special and we need to do everything possible to preserve it",
+    "url": null,
+    "user_id": "44196397",
+    "views": "30911044"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 669,
+    "conversation_id": "1825557632939339836",
+    "created": "Mon Aug 19 15:37:11 +0000 2024",
+    "favorite_count": 70891,
+    "has_translate": false,
+    "id": "1825557632939339836",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 278,
+    "reply_count": 3786,
+    "retweet_count": 8735,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Starlink is an excellent product",
+    "url": null,
+    "user_id": "44196397",
+    "views": "13900650"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 4898,
+    "conversation_id": "1825555726489800867",
+    "created": "Mon Aug 19 15:29:37 +0000 2024",
+    "favorite_count": 266124,
+    "has_translate": false,
+    "id": "1825555726489800867",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2083,
+    "reply_count": 15280,
+    "retweet_count": 51846,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The UK is turning into a police state",
+    "url": null,
+    "user_id": "44196397",
+    "views": "55241136"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVV8H8LbwAAZgtA.jpg",
+      "https://pbs.twimg.com/media/GVV8IVfaoAEbp41.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1825555353909780637",
+    "created": "Mon Aug 19 15:28:08 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825555353909780637",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo",
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2018,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "874776246592430080",
+        "indices": [
+          3,
+          15
+        ],
+        "name": "ALEX",
+        "screen_name": "ajtourville"
+      }
+    ],
+    "text": "RT @ajtourville: Happy National Aviation Day!\n\nHow it started                                How it's going https://t.co/9jiajaPK6X",
+    "url": [
+      "https://twitter.com/ajtourville/status/1825501943604859059/photo/1",
+      "https://twitter.com/ajtourville/status/1825501943604859059/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "43"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1825554794121179570",
+    "created": "Mon Aug 19 15:25:54 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825554794121179570",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2246,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "243013409",
+        "indices": [
+          3,
+          17
+        ],
+        "name": "Sawyer Merritt",
+        "screen_name": "SawyerMerritt"
+      },
+      {
+        "id_str": "1279551125264445448",
+        "indices": [
+          57,
+          70
+        ],
+        "name": "Jared Isaacman",
+        "screen_name": "rookisaacman"
+      }
+    ],
+    "text": "RT @SawyerMerritt: Next week, 434 miles above the Earth, @rookisaacman will attempt the first-ever private spacewalk.\n\nThe Polaris Dawn cre…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "67"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1825549392860082521",
+    "created": "Mon Aug 19 15:04:26 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825549392860082521",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1338,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1460368790143778820",
+        "indices": [
+          3,
+          18
+        ],
+        "name": "Polaris",
+        "screen_name": "PolarisProgram"
+      }
+    ],
+    "text": "RT @PolarisProgram: Join the Polaris Dawn crew and SpaceX at 1 p.m. ET here on X for a mission overview briefing live from Florida\n\nLearn m…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "66"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVUQ_5SXAAANNH7.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1825449897937571951",
+    "created": "Mon Aug 19 08:29:05 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825449897937571951",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "qme",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 12076,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "294293982",
+        "indices": [
+          3,
+          11
+        ],
+        "name": "Rothmus 🏴",
+        "screen_name": "Rothmus"
+      }
+    ],
+    "text": "RT @Rothmus: 🤦‍♂️ https://t.co/xW4pLdXpSF",
+    "url": [
+      "https://twitter.com/Rothmus/status/1825383917236453866/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "34"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2218,
+    "conversation_id": "1825406718462808247",
+    "created": "Mon Aug 19 05:37:30 +0000 2024",
+    "favorite_count": 97110,
+    "has_translate": false,
+    "id": "1825406718462808247",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 526,
+    "reply_count": 6983,
+    "retweet_count": 12897,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Yeah",
+    "url": null,
+    "user_id": "44196397",
+    "views": "21383425"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 5738,
+    "conversation_id": "1825395243560128667",
+    "created": "Mon Aug 19 04:51:54 +0000 2024",
+    "favorite_count": 304643,
+    "has_translate": false,
+    "id": "1825395243560128667",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 5598,
+    "reply_count": 70145,
+    "retweet_count": 16177,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Are you still seeing a lot of bots in replies?",
+    "url": null,
+    "user_id": "44196397",
+    "views": "83808352"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVT-0GEWgAAwJEC.jpg"
+    ],
+    "bookmark_count": 18580,
+    "conversation_id": "1825363923006017838",
+    "created": "Mon Aug 19 02:47:27 +0000 2024",
+    "favorite_count": 349685,
+    "has_translate": false,
+    "id": "1825363923006017838",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 2286,
+    "reply_count": 8820,
+    "retweet_count": 32608,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/dhOWoN5Wif",
+    "url": [
+      "https://twitter.com/elonmusk/status/1825363923006017838/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "55349219"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 548,
+    "conversation_id": "1825352846876839950",
+    "created": "Mon Aug 19 02:03:26 +0000 2024",
+    "favorite_count": 21745,
+    "has_translate": false,
+    "id": "1825352846876839950",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 156,
+    "reply_count": 2849,
+    "retweet_count": 2746,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Room for improvement lol\n https://t.co/ywCBgB5uJ6",
+    "url": null,
+    "user_id": "44196397",
+    "views": "9962966"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 3173,
+    "conversation_id": "1825342542482755845",
+    "created": "Mon Aug 19 01:22:30 +0000 2024",
+    "favorite_count": 131120,
+    "has_translate": false,
+    "id": "1825342542482755845",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "art",
+    "media_type": null,
+    "quote_count": 862,
+    "reply_count": 6580,
+    "retweet_count": 30933,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "🎯",
+    "url": null,
+    "user_id": "44196397",
+    "views": "16775896"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1197,
+    "conversation_id": "1825318147974373766",
+    "created": "Sun Aug 18 23:45:33 +0000 2024",
+    "favorite_count": 97179,
+    "has_translate": false,
+    "id": "1825318147974373766",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 446,
+    "reply_count": 4500,
+    "retweet_count": 11743,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "First SpaceX spacewalk mission launches in a week. This will be epic.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "28083917"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1825307915584262144/img/SLupQl0dcnG7cjgc.jpg"
+    ],
+    "bookmark_count": 2913,
+    "conversation_id": "1825309210977968585",
+    "created": "Sun Aug 18 23:10:03 +0000 2024",
+    "favorite_count": 142057,
+    "has_translate": false,
+    "id": "1825309210977968585",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 1113,
+    "reply_count": 6241,
+    "retweet_count": 14519,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/aV39ntdkac",
+    "url": [
+      "https://twitter.com/cb_doge/status/1825307978893054174/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "42764087"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1825153865177579846",
+    "created": "Sun Aug 18 12:52:45 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825153865177579846",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1746,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1494873435863977985",
+        "indices": [
+          3,
+          17
+        ],
+        "name": "Nic Cruz Patane",
+        "screen_name": "niccruzpatane"
+      }
+    ],
+    "text": "RT @niccruzpatane: UPDATED: Since buying our Tesla Model Y Performance in September of 2021, these features have been added all through OTA…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "238"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1825153729085018175",
+    "created": "Sun Aug 18 12:52:13 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1825153729085018175",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1701,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "13298072",
+        "indices": [
+          3,
+          9
+        ],
+        "name": "Tesla",
+        "screen_name": "Tesla"
+      }
+    ],
+    "text": "RT @Tesla: Parents –\n\nNew Parental Controls give you safety &amp; peace of mind while your teen's out driving\n\nSet max speed limit, reduce acce…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "214"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 5619,
+    "conversation_id": "1825046811456778315",
+    "created": "Sun Aug 18 05:47:22 +0000 2024",
+    "favorite_count": 176860,
+    "has_translate": false,
+    "id": "1825046811456778315",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1068,
+    "reply_count": 10864,
+    "retweet_count": 40823,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Strange days",
+    "url": null,
+    "user_id": "44196397",
+    "views": "27077286"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1384,
+    "conversation_id": "1824997390908022785",
+    "created": "Sun Aug 18 02:30:59 +0000 2024",
+    "favorite_count": 120616,
+    "has_translate": false,
+    "id": "1824997390908022785",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 478,
+    "reply_count": 6609,
+    "retweet_count": 20569,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Very important",
+    "url": null,
+    "user_id": "44196397",
+    "views": "32456248"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824897737239785558",
+    "created": "Sat Aug 17 19:55:00 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824897737239785558",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 3257,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1021851617287712768",
+        "indices": [
+          3,
+          12
+        ],
+        "name": "West Point Dean",
+        "screen_name": "DeanUsma"
+      }
+    ],
+    "text": "RT @DeanUsma: “Curiosity. Try to read as much as possible. Learn as much as possible in many different fields and apply critical thinking.”…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "381"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 22392,
+    "conversation_id": "1824891373822304537",
+    "created": "Sat Aug 17 19:29:43 +0000 2024",
+    "favorite_count": 398433,
+    "has_translate": false,
+    "id": "1824891373822304537",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2471,
+    "reply_count": 12110,
+    "retweet_count": 94797,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Exactly",
+    "url": null,
+    "user_id": "44196397",
+    "views": "37036778"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 11876,
+    "conversation_id": "1824854726657049023",
+    "created": "Sat Aug 17 17:04:05 +0000 2024",
+    "favorite_count": 662580,
+    "has_translate": false,
+    "id": "1824854726657049023",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 6289,
+    "reply_count": 28724,
+    "retweet_count": 94077,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "900756488574074880",
+        "indices": [
+          85,
+          95
+        ],
+        "name": "Alexandre de Moraes",
+        "screen_name": "alexandre"
+      }
+    ],
+    "text": "The decision to close the 𝕏 office in Brazil was difficult, but, if we had agreed to @alexandre’s (illegal) secret censorship and private information handover demands, there was no way we could explain our actions without being ashamed.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "72204300"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824854062631710875",
+    "created": "Sat Aug 17 17:01:27 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824854062631710875",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 5960,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1389913567671975937",
+        "indices": [
+          3,
+          11
+        ],
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge"
+      }
+    ],
+    "text": "RT @cb_doge: 𝕏 is the #1 news app in Brazil on the AppStore.\n\nAlexandre de Moraes is demanding censorship of the only source of truth in Br…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "266"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 14346,
+    "conversation_id": "1824849877286703268",
+    "created": "Sat Aug 17 16:44:49 +0000 2024",
+    "favorite_count": 147043,
+    "has_translate": false,
+    "id": "1824849877286703268",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1834,
+    "reply_count": 9414,
+    "retweet_count": 38647,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Accurate conclusion (read the whole post)",
+    "url": null,
+    "user_id": "44196397",
+    "views": "27974620"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVMq0jDWIAAwr5l.jpg"
+    ],
+    "bookmark_count": 12532,
+    "conversation_id": "1824849359156171108",
+    "created": "Sat Aug 17 16:42:45 +0000 2024",
+    "favorite_count": 599706,
+    "has_translate": false,
+    "id": "1824849359156171108",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 4598,
+    "reply_count": 17925,
+    "retweet_count": 68352,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The resemblance is uncanny 🤣🤣\n\nAlexandre de Voldemort https://t.co/IXR569y2qT",
+    "url": [
+      "https://twitter.com/elonmusk/status/1824849359156171108/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "71242024"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2498,
+    "conversation_id": "1824843760934552024",
+    "created": "Sat Aug 17 16:20:31 +0000 2024",
+    "favorite_count": 194944,
+    "has_translate": false,
+    "id": "1824843760934552024",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1064,
+    "reply_count": 6441,
+    "retweet_count": 34061,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "No question that Moraes needs to leave. Having a “justice” who repeatedly and egregiously violates the law is no justice at all.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "40830879"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVMgoSgasAASVkV.jpg",
+      "https://pbs.twimg.com/media/GVMgp_9aIAAsdsP.jpg",
+      "https://pbs.twimg.com/media/GVMgrlyawAAv-i4.jpg",
+      "https://pbs.twimg.com/media/GVMgrl2aoAAheEU.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1824840500266111173",
+    "created": "Sat Aug 17 16:07:33 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824840500266111173",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "photo",
+      "photo",
+      "photo",
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 5917,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "218984871",
+        "indices": [
+          3,
+          17
+        ],
+        "name": "Global Government Affairs",
+        "screen_name": "GlobalAffairs"
+      }
+    ],
+    "text": "RT @GlobalAffairs: https://t.co/LeL7gQRKXY",
+    "url": [
+      "https://twitter.com/GlobalAffairs/status/1824838221739782551/photo/1",
+      "https://twitter.com/GlobalAffairs/status/1824838221739782551/photo/1",
+      "https://twitter.com/GlobalAffairs/status/1824838221739782551/photo/1",
+      "https://twitter.com/GlobalAffairs/status/1824838221739782551/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "335"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824840482633244927",
+    "created": "Sat Aug 17 16:07:29 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824840482633244927",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 30047,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "218984871",
+        "indices": [
+          3,
+          17
+        ],
+        "name": "Global Government Affairs",
+        "screen_name": "GlobalAffairs"
+      }
+    ],
+    "text": "RT @GlobalAffairs: Last night, Alexandre de Moraes threatened our legal representative in Brazil with arrest if we do not comply with his c…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "257"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 5126,
+    "conversation_id": "1824839784852013125",
+    "created": "Sat Aug 17 16:04:43 +0000 2024",
+    "favorite_count": 235573,
+    "has_translate": false,
+    "id": "1824839784852013125",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2678,
+    "reply_count": 9363,
+    "retweet_count": 53575,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "900756488574074880",
+        "indices": [
+          28,
+          38
+        ],
+        "name": "Alexandre de Moraes",
+        "screen_name": "alexandre"
+      }
+    ],
+    "text": "Due to demands by “Justice” @Alexandre in Brazil that would require us to break (in secret) Brazilian, Argentinian, American and international law, 𝕏 has no choice but to close our local operations in Brazil.\n\nHe is an utter disgrace to justice.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "37494851"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824668946445865108",
+    "created": "Sat Aug 17 04:45:52 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824668946445865108",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 6135,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1366565625401909249",
+        "indices": [
+          3,
+          18
+        ],
+        "name": "Wall Street Silver",
+        "screen_name": "WallStreetSilv"
+      }
+    ],
+    "text": "RT @WallStreetSilv: Flashback:\n\nNPR CEO Katherine Maher telling us that the “truth gets in the way of getting things done” 👀👀\n\nThis is what…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "431"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824666605713825956",
+    "created": "Sat Aug 17 04:36:34 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824666605713825956",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 895,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1372635343544025088",
+        "indices": [
+          3,
+          18
+        ],
+        "name": "Dongwook",
+        "screen_name": "DongWookChung2"
+      }
+    ],
+    "text": "RT @DongWookChung2: Community Spam Setting is now accessible to all admins with the web and the latest version of the mobile apps",
+    "url": null,
+    "user_id": "44196397",
+    "views": "489"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 17858,
+    "conversation_id": "1824663503287759332",
+    "created": "Sat Aug 17 04:24:14 +0000 2024",
+    "favorite_count": 171006,
+    "has_translate": false,
+    "id": "1824663503287759332",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1381,
+    "reply_count": 6681,
+    "retweet_count": 49663,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "16359535",
+        "indices": [
+          34,
+          44
+        ],
+        "name": "david friedberg",
+        "screen_name": "friedberg"
+      }
+    ],
+    "text": "Great explanation of inflation by @friedberg",
+    "url": null,
+    "user_id": "44196397",
+    "views": "24176432"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 4335,
+    "conversation_id": "1824652682545553634",
+    "created": "Sat Aug 17 03:41:14 +0000 2024",
+    "favorite_count": 197823,
+    "has_translate": false,
+    "id": "1824652682545553634",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1115,
+    "reply_count": 6779,
+    "retweet_count": 44012,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "These demands violate Brazilian, Argentinian and US law!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "25917840"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1824646750352609687",
+    "created": "Sat Aug 17 03:17:40 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824646750352609687",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 4639,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1319287761048723458",
+        "indices": [
+          3,
+          15
+        ],
+        "name": "Mario Nawfal",
+        "screen_name": "MarioNawfal"
+      }
+    ],
+    "text": "RT @MarioNawfal: DOUGLAS MURRAY: ELON HAS THE GUTS TO SAY THE TRUTH ON THE SITUATION IN THE UK \n\n“Jonathan Freedland of the Guardian [who c…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "255"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/ext_tw_video_thumb/1824066333040115712/pu/img/JlW0zqrJ8spONpCT.jpg"
+    ],
+    "bookmark_count": 11548,
+    "conversation_id": "1824639011710779760",
+    "created": "Sat Aug 17 02:46:55 +0000 2024",
+    "favorite_count": 391256,
+    "has_translate": false,
+    "id": "1824639011710779760",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 1796,
+    "reply_count": 10732,
+    "retweet_count": 35426,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/CvvNGcujVs",
+    "url": [
+      "https://twitter.com/SpaceX/status/1824066867746754990/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "74799874"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVJeHRqWwAADN3I.jpg",
+      "https://pbs.twimg.com/media/GVJeHi8WMAARBLh.jpg",
+      "https://pbs.twimg.com/media/GVJeHvsXUAA-0-2.jpg",
+      "https://pbs.twimg.com/media/GVJeIAXX0AAYHYn.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1824637308215189742",
+    "created": "Sat Aug 17 02:40:09 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824637308215189742",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo",
+      "photo",
+      "photo",
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2612,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "34743251",
+        "indices": [
+          3,
+          10
+        ],
+        "name": "SpaceX",
+        "screen_name": "SpaceX"
+      }
+    ],
+    "text": "RT @SpaceX: Falcon 9 launches 116 spacecraft to orbit, completing our 375th mission! https://t.co/M6Lkpp3TXZ",
+    "url": [
+      "https://twitter.com/SpaceX/status/1824624354975416771/photo/1",
+      "https://twitter.com/SpaceX/status/1824624354975416771/photo/1",
+      "https://twitter.com/SpaceX/status/1824624354975416771/photo/1",
+      "https://twitter.com/SpaceX/status/1824624354975416771/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "449"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 978,
+    "conversation_id": "1824470434622083589",
+    "created": "Fri Aug 16 15:37:03 +0000 2024",
+    "favorite_count": 79128,
+    "has_translate": false,
+    "id": "1824470434622083589",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 302,
+    "reply_count": 4945,
+    "retweet_count": 12775,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "But, amazingly, some people still believe the legacy media!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "28665743"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 14170,
+    "conversation_id": "1824466456207094216",
+    "created": "Fri Aug 16 15:21:14 +0000 2024",
+    "favorite_count": 668158,
+    "has_translate": false,
+    "id": "1824466456207094216",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 3308,
+    "reply_count": 21953,
+    "retweet_count": 101404,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "The memes know",
+    "url": null,
+    "user_id": "44196397",
+    "views": "77984497"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVCfdYwbAAACy88.jpg",
+      "https://pbs.twimg.com/media/GVCfdZBaEAENMNj.jpg",
+      "https://pbs.twimg.com/media/GVCfgaJaEAUD0JU.jpg",
+      "https://pbs.twimg.com/media/GVCfiWiaEAAYkJ9.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1824428691138429068",
+    "created": "Fri Aug 16 12:51:10 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824428691138429068",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo",
+      "photo",
+      "photo",
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2470,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "34743251",
+        "indices": [
+          3,
+          10
+        ],
+        "name": "SpaceX",
+        "screen_name": "SpaceX"
+      },
+      {
+        "id_str": "17027323",
+        "indices": [
+          34,
+          40
+        ],
+        "name": "Maxar Technologies",
+        "screen_name": "Maxar"
+      }
+    ],
+    "text": "RT @SpaceX: Falcon 9 launches the @Maxar 2 mission to orbit from Florida and lands on Landing Zone 1 https://t.co/zudzTUOJpd",
+    "url": [
+      "https://twitter.com/SpaceX/status/1824133359087546470/photo/1",
+      "https://twitter.com/SpaceX/status/1824133359087546470/photo/1",
+      "https://twitter.com/SpaceX/status/1824133359087546470/photo/1",
+      "https://twitter.com/SpaceX/status/1824133359087546470/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "353"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 6452,
+    "conversation_id": "1824423656266555474",
+    "created": "Fri Aug 16 12:31:10 +0000 2024",
+    "favorite_count": 348151,
+    "has_translate": false,
+    "id": "1824423656266555474",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "ht",
+    "media_type": null,
+    "quote_count": 4623,
+    "reply_count": 23476,
+    "retweet_count": 23890,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Kiss, kiss 🔫🔫",
+    "url": null,
+    "user_id": "44196397",
+    "views": "94739404"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 10156,
+    "conversation_id": "1824415602032754871",
+    "created": "Fri Aug 16 11:59:10 +0000 2024",
+    "favorite_count": 194451,
+    "has_translate": false,
+    "id": "1824415602032754871",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 880,
+    "reply_count": 6119,
+    "retweet_count": 41968,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Always view to the source material",
+    "url": null,
+    "user_id": "44196397",
+    "views": "29722712"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 5291,
+    "conversation_id": "1824411157269975500",
+    "created": "Fri Aug 16 11:41:30 +0000 2024",
+    "favorite_count": 125504,
+    "has_translate": false,
+    "id": "1824411157269975500",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 720,
+    "reply_count": 5714,
+    "retweet_count": 32104,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Exactly",
+    "url": null,
+    "user_id": "44196397",
+    "views": "15324843"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2681,
+    "conversation_id": "1824410638707237102",
+    "created": "Fri Aug 16 11:39:26 +0000 2024",
+    "favorite_count": 172577,
+    "has_translate": false,
+    "id": "1824410638707237102",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 1070,
+    "reply_count": 12279,
+    "retweet_count": 22977,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "It’s crazy how much people trust the media in Europe!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "42078036"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 20128,
+    "conversation_id": "1824410315422871867",
+    "created": "Fri Aug 16 11:38:09 +0000 2024",
+    "favorite_count": 789919,
+    "has_translate": false,
+    "id": "1824410315422871867",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 12965,
+    "reply_count": 49478,
+    "retweet_count": 143185,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Inflation is caused by the Federal government spending more than it earns, because they just print more money to make up the difference. \n\nTo solve inflation, reduce wasteful government spending. Your tax dollars should be spent well, not poorly.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "70848150"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 6064,
+    "conversation_id": "1824409551338148309",
+    "created": "Fri Aug 16 11:35:07 +0000 2024",
+    "favorite_count": 168338,
+    "has_translate": false,
+    "id": "1824409551338148309",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 2488,
+    "reply_count": 11291,
+    "retweet_count": 48963,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "What happens when price controls are mandated\nhttps://t.co/we0uQnBr9R.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "20638668"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2662,
+    "conversation_id": "1824333954519900371",
+    "created": "Fri Aug 16 06:34:43 +0000 2024",
+    "favorite_count": 178532,
+    "has_translate": false,
+    "id": "1824333954519900371",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "qst",
+    "media_type": null,
+    "quote_count": 748,
+    "reply_count": 8142,
+    "retweet_count": 24902,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Yes",
+    "url": null,
+    "user_id": "44196397",
+    "views": "44212450"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GVD8dBzaEAAjPIc.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1824276414931116276",
+    "created": "Fri Aug 16 02:46:05 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1824276414931116276",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1750,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1337433908074467328",
+        "indices": [
+          3,
+          19
+        ],
+        "name": "Nemo",
+        "screen_name": "thecaptain_nemo"
+      }
+    ],
+    "text": "RT @thecaptain_nemo: https://t.co/AKhLhNOVYo",
+    "url": [
+      "https://twitter.com/thecaptain_nemo/status/1824235427207004520/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "562"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1990,
+    "conversation_id": "1824189343386284066",
+    "created": "Thu Aug 15 21:00:05 +0000 2024",
+    "favorite_count": 58655,
+    "has_translate": false,
+    "id": "1824189343386284066",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 298,
+    "reply_count": 3918,
+    "retweet_count": 9436,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Haha very accurate!\n\nGrok could give you news that’s actually useful &amp; doesn’t just make you feel sad.",
+    "url": null,
+    "user_id": "44196397",
+    "views": "19755570"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1650,
+    "conversation_id": "1824177430606778646",
+    "created": "Thu Aug 15 20:12:45 +0000 2024",
+    "favorite_count": 148023,
+    "has_translate": false,
+    "id": "1824177430606778646",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 640,
+    "reply_count": 5850,
+    "retweet_count": 14808,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "🎶 Starships were meant to fly 🎶",
+    "url": null,
+    "user_id": "44196397",
+    "views": "45771517"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 7530,
+    "conversation_id": "1824019125720539371",
+    "created": "Thu Aug 15 09:43:42 +0000 2024",
+    "favorite_count": 54712,
+    "has_translate": false,
+    "id": "1824019125720539371",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 290,
+    "reply_count": 5141,
+    "retweet_count": 7874,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Good examples of how to make a wide range of cool images with Grok",
+    "url": null,
+    "user_id": "44196397",
+    "views": "17529742"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1206,
+    "conversation_id": "1823864180400906326",
+    "created": "Wed Aug 14 23:28:01 +0000 2024",
+    "favorite_count": 41552,
+    "has_translate": false,
+    "id": "1823864180400906326",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "art",
+    "media_type": null,
+    "quote_count": 240,
+    "reply_count": 3381,
+    "retweet_count": 5014,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "😂",
+    "url": null,
+    "user_id": "44196397",
+    "views": "12170419"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GU-LzOXWwAAK2i8.jpg"
+    ],
+    "bookmark_count": 0,
+    "conversation_id": "1823833376182427747",
+    "created": "Wed Aug 14 21:25:36 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1823833376182427747",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 2136,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1389913567671975937",
+        "indices": [
+          3,
+          11
+        ],
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge"
+      }
+    ],
+    "text": "RT @cb_doge: This image was generated by AI using Grok. https://t.co/jheH8ly9ct",
+    "url": [
+      "https://twitter.com/cb_doge/status/1823830095775056356/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "313"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1093,
+    "conversation_id": "1823828864474513497",
+    "created": "Wed Aug 14 21:07:41 +0000 2024",
+    "favorite_count": 62514,
+    "has_translate": false,
+    "id": "1823828864474513497",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "ca",
+    "media_type": null,
+    "quote_count": 300,
+    "reply_count": 3824,
+    "retweet_count": 7913,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Most American-made car in America \n https://t.co/2CcdKxPGtp",
+    "url": null,
+    "user_id": "44196397",
+    "views": "19262422"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1823805974605652406",
+    "created": "Wed Aug 14 19:36:43 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1823805974605652406",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1092,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "143134601",
+        "indices": [
+          3,
+          17
+        ],
+        "name": "Shaun Maguire",
+        "screen_name": "shaunmmaguire"
+      }
+    ],
+    "text": "RT @shaunmmaguire: Grok-2 is a crazy improvement, go play with it",
+    "url": null,
+    "user_id": "44196397",
+    "views": "245"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 888,
+    "conversation_id": "1823805120385310796",
+    "created": "Wed Aug 14 19:33:20 +0000 2024",
+    "favorite_count": 37138,
+    "has_translate": false,
+    "id": "1823805120385310796",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 239,
+    "reply_count": 4341,
+    "retweet_count": 4264,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Worth it!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "17930765"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1823803944260485150",
+    "created": "Wed Aug 14 19:28:39 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1823803944260485150",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 846,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1355945100216573952",
+        "indices": [
+          3,
+          19
+        ],
+        "name": "Sir Doge of the Coin ⚔️",
+        "screen_name": "dogeofficialceo"
+      }
+    ],
+    "text": "RT @dogeofficialceo: I'm not sure there's a better bang-for-your-buck subscription than X Premium on the market right now. 🔥",
+    "url": null,
+    "user_id": "44196397",
+    "views": "348"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/ext_tw_video_thumb/1823794141790138368/pu/img/wYXZpWLJ6bFDZDyF.jpg"
+    ],
+    "bookmark_count": 16584,
+    "conversation_id": "1823796943954567284",
+    "created": "Wed Aug 14 19:00:50 +0000 2024",
+    "favorite_count": 318548,
+    "has_translate": false,
+    "id": "1823796943954567284",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 1588,
+    "reply_count": 8180,
+    "retweet_count": 49749,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "It is hilariously absurd to claim that CNN has no bias, as even the liberal audience of Colbert knows 😂\n https://t.co/p1iJDbYDTS",
+    "url": [
+      "https://twitter.com/VigilantFox/status/1823794302528454822/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "34003979"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2455,
+    "conversation_id": "1823793687169785863",
+    "created": "Wed Aug 14 18:47:54 +0000 2024",
+    "favorite_count": 46763,
+    "has_translate": false,
+    "id": "1823793687169785863",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 497,
+    "reply_count": 6243,
+    "retweet_count": 6110,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Only $8/month (if you subscribe via web) to get AI access, far fewer ads and many awesome features!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "9972877"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GU9O4_ybkAAcDk3.jpg"
+    ],
+    "bookmark_count": 8573,
+    "conversation_id": "1823763121917583812",
+    "created": "Wed Aug 14 16:46:26 +0000 2024",
+    "favorite_count": 623548,
+    "has_translate": false,
+    "id": "1823763121917583812",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 2765,
+    "reply_count": 18283,
+    "retweet_count": 90924,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/TRGdROopQu",
+    "url": [
+      "https://twitter.com/elonmusk/status/1823763121917583812/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "35907513"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 749,
+    "conversation_id": "1823761547031937072",
+    "created": "Wed Aug 14 16:40:11 +0000 2024",
+    "favorite_count": 36912,
+    "has_translate": false,
+    "id": "1823761547031937072",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 192,
+    "reply_count": 2885,
+    "retweet_count": 4539,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Grok is the most fun AI in the world!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "16329125"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 2199,
+    "conversation_id": "1823759092944658559",
+    "created": "Wed Aug 14 16:30:26 +0000 2024",
+    "favorite_count": 79742,
+    "has_translate": false,
+    "id": "1823759092944658559",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "art",
+    "media_type": null,
+    "quote_count": 178,
+    "reply_count": 2280,
+    "retweet_count": 6233,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "😂",
+    "url": null,
+    "user_id": "44196397",
+    "views": "26338606"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 277,
+    "conversation_id": "1823756208207196235",
+    "created": "Wed Aug 14 16:18:58 +0000 2024",
+    "favorite_count": 24553,
+    "has_translate": false,
+    "id": "1823756208207196235",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "art",
+    "media_type": null,
+    "quote_count": 46,
+    "reply_count": 1629,
+    "retweet_count": 2864,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "😂",
+    "url": null,
+    "user_id": "44196397",
+    "views": "8832325"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1823746426440179950",
+    "created": "Wed Aug 14 15:40:06 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1823746426440179950",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 5626,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "1389913567671975937",
+        "indices": [
+          3,
+          11
+        ],
+        "name": "DogeDesigner",
+        "screen_name": "cb_doge"
+      }
+    ],
+    "text": "RT @cb_doge: Just a reminder:\n\n𝕏 will pay legal bills of users 'unfairly treated' by their employer due to posting something on this platfo…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "350"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 369,
+    "conversation_id": "1823745969575637416",
+    "created": "Wed Aug 14 15:38:17 +0000 2024",
+    "favorite_count": 25330,
+    "has_translate": false,
+    "id": "1823745969575637416",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 150,
+    "reply_count": 3034,
+    "retweet_count": 3121,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Subscribe to 𝕏 Premium for the most fun!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "13537487"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1823742429050417152/img/qnjBLFf3ESNkkXpJ.jpg"
+    ],
+    "bookmark_count": 108037,
+    "conversation_id": "1823742501884453312",
+    "created": "Wed Aug 14 15:24:30 +0000 2024",
+    "favorite_count": 1894727,
+    "has_translate": false,
+    "id": "1823742501884453312",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 25076,
+    "reply_count": 104889,
+    "retweet_count": 231777,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Haters will say this is AI  🕺🕺 https://t.co/vqWVxiYXeD",
+    "url": [
+      "https://twitter.com/elonmusk/status/1823742501884453312/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "138911212"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 0,
+    "conversation_id": "1823733583913337338",
+    "created": "Wed Aug 14 14:49:04 +0000 2024",
+    "favorite_count": 0,
+    "has_translate": false,
+    "id": "1823733583913337338",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 0,
+    "reply_count": 0,
+    "retweet_count": 1593,
+    "tagged_hashtags": [],
+    "tagged_users": [
+      {
+        "id_str": "17862108",
+        "indices": [
+          3,
+          13
+        ],
+        "name": "Farzad",
+        "screen_name": "farzyness"
+      }
+    ],
+    "text": "RT @farzyness: The US has a fertility crisis, but we can easily fix it.\n\nThe fertility rate in the US is below replacement rate, at 1.78 bi…",
+    "url": null,
+    "user_id": "44196397",
+    "views": "235"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/ext_tw_video_thumb/1611024192010608649/pu/img/qJKkOkielOqRKSqu.jpg"
+    ],
+    "bookmark_count": 25895,
+    "conversation_id": "1823733168530448698",
+    "created": "Wed Aug 14 14:47:25 +0000 2024",
+    "favorite_count": 540401,
+    "has_translate": false,
+    "id": "1823733168530448698",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 4053,
+    "reply_count": 17123,
+    "retweet_count": 52421,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/1VAGKqvBtF",
+    "url": [
+      "https://twitter.com/SpaceX/status/1611024931348959232/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "84658731"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/amplify_video_thumb/1823685568426831872/img/Sir5sjElcm_u8tOs.jpg"
+    ],
+    "bookmark_count": 4338,
+    "conversation_id": "1823730362264248798",
+    "created": "Wed Aug 14 14:36:16 +0000 2024",
+    "favorite_count": 335886,
+    "has_translate": false,
+    "id": "1823730362264248798",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "zxx",
+    "media_type": [
+      "video"
+    ],
+    "quote_count": 2986,
+    "reply_count": 13257,
+    "retweet_count": 34885,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "https://t.co/huWaX3mHr7",
+    "url": [
+      "https://twitter.com/DogecoinNorway/status/1823685625289085121/video/1"
+    ],
+    "user_id": "44196397",
+    "views": "44824899"
+  },
+  {
+    "attached_media": null,
+    "bookmark_count": 1255,
+    "conversation_id": "1823728989921534265",
+    "created": "Wed Aug 14 14:30:49 +0000 2024",
+    "favorite_count": 115340,
+    "has_translate": false,
+    "id": "1823728989921534265",
+    "is_quote": true,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": null,
+    "quote_count": 253,
+    "reply_count": 3938,
+    "retweet_count": 7761,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Drive long distance anywhere in America!",
+    "url": null,
+    "user_id": "44196397",
+    "views": "43312250"
+  },
+  {
+    "attached_media": [
+      "https://pbs.twimg.com/media/GU8sO3MbIAA8mw4.jpg"
+    ],
+    "bookmark_count": 11127,
+    "conversation_id": "1823725011280257501",
+    "created": "Wed Aug 14 14:15:00 +0000 2024",
+    "favorite_count": 287890,
+    "has_translate": false,
+    "id": "1823725011280257501",
+    "is_quote": false,
+    "is_retweet": false,
+    "language": "en",
+    "media_type": [
+      "photo"
+    ],
+    "quote_count": 1159,
+    "reply_count": 5593,
+    "retweet_count": 22504,
+    "tagged_hashtags": [],
+    "tagged_users": [],
+    "text": "Even Neo had to “Accept cookies to continue” https://t.co/a5mIc76M5F",
+    "url": [
+      "https://twitter.com/elonmusk/status/1823725011280257501/photo/1"
+    ],
+    "user_id": "44196397",
+    "views": "28102746"
+  }
+]
