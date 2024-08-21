@@ -51,7 +51,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="home">
      <property name="styleSheet">
@@ -135,22 +135,6 @@
       </property>
       <property name="text">
        <string>X Scraper</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>610</x>
-        <y>80</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Test</string>
-      </property>
-      <property name="autoDefault">
-       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="disclaimer_btn">
@@ -562,7 +546,6 @@
   <tabstop>export_tweets_line</tabstop>
   <tabstop>tweets_dir_btn</tabstop>
   <tabstop>export_tweets_btn</tabstop>
-  <tabstop>pushButton</tabstop>
  </tabstops>
  <resources>
   <include location="logo.qrc"/>

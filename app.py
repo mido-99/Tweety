@@ -86,7 +86,6 @@ class TweetyScrapy(QMainWindow):
 
     def handle_buttons(self):
         
-        self.pushButton.clicked.connect(self.test)
         # Home page
         self.goto_profile.clicked.connect(self.goto_user_prof_data)
         self.goto_user_tweets.clicked.connect(self.goto_all_user_tweets)
@@ -114,14 +113,11 @@ class TweetyScrapy(QMainWindow):
 
     def go_home(self):
         self.stackedWidget.setCurrentIndex(0)
-    
-    def test(self):
-        pass
 
     # Check existing cookies
     def cookie_exists(self):
         
-        return bool(self.COOKIE)
+        return bool(os.path.exists('cookie.env'))
 
     def check_cookie(self):
         '''Checks if there's existing twitter session cookies in "cookies" file'''
