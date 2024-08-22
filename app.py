@@ -187,7 +187,7 @@ class TweetyScrapy(QMainWindow):
         numbers_list = [self.tweets_num_combo.itemText(i) for i in range(self.tweets_num_combo.count())]
 
         if self.tweets_num_combo.itemText(index) == "Custom":
-            number, ok = QInputDialog.getInt(self, 'User Tweets', 'Select tweets number to get', 1, 1, 10000,
+            number, ok = QInputDialog.getInt(self, 'User Tweets', 'Select tweets number to get', 1, 1, 100_000,
                     flags= Qt.Window | Qt.WindowTitleHint | Qt.WindowCloseButtonHint)
             if ok:
                 if str(number) not in numbers_list:     # If input doesn't exist
@@ -256,7 +256,7 @@ class TweetyScrapy(QMainWindow):
             • Go to the tab within the selected request.
             • Scroll down in the Request Headers section.
             • Find the cookie field and copy its entire value.
-            '''.strreplace('  ', ''),
+            '''.strip().replace('  ', ''),
             parent=self, 
             styling=STYLESHEET
         )
@@ -278,7 +278,7 @@ class TweetyScrapy(QMainWindow):
             Your Responsibility:
             Be Cautious! If you decide to proceed with scraping X, you do so at your own risk. \n
             While staying at normal scraping rate can go unnoticed, Be aware that you are fully responsible for any actions taken by X as a result of your activities. 
-            '''.strreplace('  ', ''),
+            '''.strip().replace('  ', ''),
             parent=self, 
             styling=STYLESHEET
         )
