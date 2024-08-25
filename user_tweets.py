@@ -131,24 +131,39 @@ class UserTweets:
         all_tweets = []
         with httpx.Client(headers= headers) as client:
             page = 1
+            retries = 3
             while len(all_tweets) < number:
-                params = {
-                    'variables': json.dumps(variables),
-                    'features': '{"rweb_tipjar_consumption_enabled":true,"responsive_web_graphql_exclude_directive_enabled":true,"verified_phone_label_enabled":false,"creator_subscriptions_tweet_preview_api_enabled":true,"responsive_web_graphql_timeline_navigation_enabled":true,"responsive_web_graphql_skip_user_profile_image_extensions_enabled":false,"communities_web_enable_tweet_community_results_fetch":true,"c9s_tweet_anatomy_moderator_badge_enabled":true,"articles_preview_enabled":true,"responsive_web_edit_tweet_api_enabled":true,"graphql_is_translatable_rweb_tweet_is_translatable_enabled":true,"view_counts_everywhere_api_enabled":true,"longform_notetweets_consumption_enabled":true,"responsive_web_twitter_article_tweet_consumption_enabled":true,"tweet_awards_web_tipping_enabled":false,"creator_subscriptions_quote_tweet_preview_enabled":false,"freedom_of_speech_not_reach_fetch_enabled":true,"standardized_nudges_misinfo":true,"tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled":true,"rweb_video_timestamps_enabled":true,"longform_notetweets_rich_text_read_enabled":true,"longform_notetweets_inline_media_enabled":true,"responsive_web_enhance_cards_enabled":false}',
-                    'fieldToggles': '{"withArticlePlainText":false}',
-                }
-                # Update params each page
-                query_params = httpx.QueryParams(params)
-                query_params = query_params.merge(query_params)
-                response = client.get(
-                    'https://x.com/i/api/graphql/E3opETHurmVJflFsUBVuUQ/UserTweets',
-                    params=query_params
-                )
+                
+                for attemp in range(retries):     # Retry loop for each page
+                    params = {
+                        'variables': json.dumps(variables),
+                        'features': '{"rweb_tipjar_consumption_enabled":true,"responsive_web_graphql_exclude_directive_enabled":true,"verified_phone_label_enabled":false,"creator_subscriptions_tweet_preview_api_enabled":true,"responsive_web_graphql_timeline_navigation_enabled":true,"responsive_web_graphql_skip_user_profile_image_extensions_enabled":false,"communities_web_enable_tweet_community_results_fetch":true,"c9s_tweet_anatomy_moderator_badge_enabled":true,"articles_preview_enabled":true,"responsive_web_edit_tweet_api_enabled":true,"graphql_is_translatable_rweb_tweet_is_translatable_enabled":true,"view_counts_everywhere_api_enabled":true,"longform_notetweets_consumption_enabled":true,"responsive_web_twitter_article_tweet_consumption_enabled":true,"tweet_awards_web_tipping_enabled":false,"creator_subscriptions_quote_tweet_preview_enabled":false,"freedom_of_speech_not_reach_fetch_enabled":true,"standardized_nudges_misinfo":true,"tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled":true,"rweb_video_timestamps_enabled":true,"longform_notetweets_rich_text_read_enabled":true,"longform_notetweets_inline_media_enabled":true,"responsive_web_enhance_cards_enabled":false}',
+                        'fieldToggles': '{"withArticlePlainText":false}',
+                    }
+                    # Update params each page
+                    query_params = httpx.QueryParams(params)
+                    response = client.get(
+                        'https://x.com/i/api/graphql/E3opETHurmVJflFsUBVuUQ/UserTweets',
+                        params=query_params
+                    )
 
-                if response.status_code != 200:
-                    return None
+                    if response.status_code == 200:
+                        break   # Exit retry loop if success
+                    elif attemp < retries - 1:
+                        time.sleep(2 ** attemp) # If failed retry within time
+                    elif response.status_code == 429:
+                        all_tweets.append('Rate limit exceeded')
+                        return all_tweets
+                    else:
+                        all_tweets.append(f'Error occured in page {page}')
+                        return all_tweets
+
                 tweets = [e for e in response.json()['data']['user']['result']['timeline_v2']['timeline']['instructions']
                     if e['type'] == 'TimelineAddEntries'][0]['entries']
+                
+                if len(tweets) == 2: # If last tweet reached; only cursor-top & cursor-bottom are returned
+                    break
+                
                 parsed = self._parse_user_tweets(tweets)
                 all_tweets.extend(parsed)
 
